@@ -201,6 +201,26 @@ local LOCALIZED_PROFESSIONS = {
     zhTW = "Tailoring",
     spellId = 3908,
   },
+  Gardening = {
+    enUS = "Gardening",
+    deDE = "Gaertnerei",
+    frFR = "Gardening",
+    esES = "Jardineria",
+    ruRU = "Gardening",
+    zhCN = "Gardening",
+    koKR = "Gardening",
+    zhTW = "Gardening",
+  },
+  Survival = {
+    enUS = "Survival",
+    deDE = "Ueberleben",
+    frFR = "Survival",
+    esES = "Supervivencia",
+    ruRU = "Survival",
+    zhCN = "Survival",
+    koKR = "Survival",
+    zhTW = "Survival",
+  },
 }
 
 local KNOWN_COOLDOWNS = {
@@ -221,18 +241,30 @@ local KNOWN_COOLDOWNS = {
   Tailoring = {
     { id = "mooncloth", spellId = 18560, names = { enUS = "Mooncloth", deDE = "Mondstoff" } },
   },
+  Gardening = {},
+  Survival = {},
 }
 
 local PROFESSIONS_WITH_COOLDOWNS = {
   "Alchemy",
   "Tailoring",
+  "Gardening",
+  "Survival",
 }
 
 local RECIPE_BY_ID = {}
+local function registerRecipeDef(recipeDef, professionKey)
+  if not recipeDef or not recipeDef.id then
+    return
+  end
+
+  recipeDef.profession = professionKey or recipeDef.profession
+  RECIPE_BY_ID[recipeDef.id] = recipeDef
+end
+
 for professionKey, recipes in pairs(KNOWN_COOLDOWNS) do
   for _, recipeDef in ipairs(recipes) do
-    recipeDef.profession = professionKey
-    RECIPE_BY_ID[recipeDef.id] = recipeDef
+    registerRecipeDef(recipeDef, professionKey)
   end
 end
 
@@ -476,6 +508,7 @@ local function initializeDatabase()
   CCD.db.frame = CCD.db.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0 }
   CCD.db.minimap = CCD.db.minimap or { angle = 45 }
   CCD.db.recipes = CCD.db.recipes or {}
+  CCD.db.dynamicRecipes = CCD.db.dynamicRecipes or {}
   CCD.db.professions = CCD.db.professions or {}
   CCD.db.scanned = CCD.db.scanned or {}
   CCD.db.bank = CCD.db.bank or { counts = {}, lastUpdate = 0 }
@@ -484,6 +517,70 @@ local function initializeDatabase()
   if CCD.db.visible == nil then
     CCD.db.visible = true
   end
+
+  for professionKey, recipes in pairs(CCD.db.dynamicRecipes) do
+    for _, recipeDef in pairs(recipes or {}) do
+      registerRecipeDef(recipeDef, professionKey)
+    end
+  end
+end
+
+local function getRecipesForProfession(professionKey)
+  local recipes = {}
+
+  for _, recipeDef in ipairs(KNOWN_COOLDOWNS[professionKey] or {}) do
+    table.insert(recipes, recipeDef)
+  end
+
+  if CCD.db and CCD.db.dynamicRecipes and CCD.db.dynamicRecipes[professionKey] then
+    for _, recipeDef in pairs(CCD.db.dynamicRecipes[professionKey]) do
+      table.insert(recipes, recipeDef)
+    end
+  end
+
+  return recipes
+end
+
+local function makeDynamicRecipeId(professionKey, recipeName)
+  local normalized = lowercase(trim(recipeName or "")) or "recipe"
+  normalized = string.gsub(normalized, "[^%w]+", "_")
+  normalized = string.gsub(normalized, "^_+", "")
+  normalized = string.gsub(normalized, "_+$", "")
+
+  if normalized == "" then
+    normalized = "recipe"
+  end
+
+  return "dynamic_" .. professionKey .. "_" .. normalized
+end
+
+local function rememberDynamicCooldownRecipe(professionKey, recipeName)
+  if not CCD.db or not professionKey or not recipeName or recipeName == "" then
+    return nil
+  end
+
+  CCD.db.dynamicRecipes[professionKey] = CCD.db.dynamicRecipes[professionKey] or {}
+
+  for recipeId, recipeDef in pairs(CCD.db.dynamicRecipes[professionKey]) do
+    if recipeMatchesName(recipeDef, recipeName) then
+      registerRecipeDef(recipeDef, professionKey)
+      return recipeDef
+    end
+  end
+
+  local recipeId = makeDynamicRecipeId(professionKey, recipeName)
+  local recipeDef = {
+    id = recipeId,
+    profession = professionKey,
+    names = {
+      enUS = recipeName,
+    },
+  }
+  recipeDef.names[locale] = recipeName
+
+  CCD.db.dynamicRecipes[professionKey][recipeId] = recipeDef
+  registerRecipeDef(recipeDef, professionKey)
+  return recipeDef
 end
 
 local function buildBagCounts()
@@ -633,7 +730,7 @@ local function saveRecipeCooldown(professionKey, recipeDef, cooldown, reagents)
 end
 
 local function markMissingRecipesAsUnknown(professionKey, foundRecipes)
-  local definitions = KNOWN_COOLDOWNS[professionKey] or {}
+  local definitions = getRecipesForProfession(professionKey)
 
   for _, recipeDef in ipairs(definitions) do
     if not foundRecipes[recipeDef.id] then
@@ -672,15 +769,24 @@ local function scanTradeSkillFrame()
   end
 
   local foundRecipes = {}
-  local recipeDefinitions = KNOWN_COOLDOWNS[professionKey]
+  local recipeDefinitions = getRecipesForProfession(professionKey)
 
   for index = 1, GetNumTradeSkills() do
     local recipeName, recipeType = GetTradeSkillInfo(index)
     if recipeType ~= "header" then
+      local cooldown = GetTradeSkillCooldown(index)
+      if cooldown and cooldown > 0 then
+        local dynamicRecipe = rememberDynamicCooldownRecipe(professionKey, recipeName)
+        if dynamicRecipe then
+          foundRecipes[dynamicRecipe.id] = true
+          saveRecipeCooldown(professionKey, dynamicRecipe, cooldown, captureTradeSkillReagents(index))
+        end
+      end
+
       for _, recipeDef in ipairs(recipeDefinitions) do
         if recipeMatchesName(recipeDef, recipeName) then
           foundRecipes[recipeDef.id] = true
-          saveRecipeCooldown(professionKey, recipeDef, GetTradeSkillCooldown(index), captureTradeSkillReagents(index))
+          saveRecipeCooldown(professionKey, recipeDef, cooldown, captureTradeSkillReagents(index))
           break
         end
       end
@@ -730,15 +836,24 @@ local function scanCraftFrame()
   end
 
   local foundRecipes = {}
-  local recipeDefinitions = KNOWN_COOLDOWNS[professionKey]
+  local recipeDefinitions = getRecipesForProfession(professionKey)
 
   for index = 1, GetNumCrafts() do
     local recipeName, _, recipeType = GetCraftInfo(index)
     if recipeType ~= "header" then
+      local cooldown = GetCraftCooldown and GetCraftCooldown(index)
+      if cooldown and cooldown > 0 then
+        local dynamicRecipe = rememberDynamicCooldownRecipe(professionKey, recipeName)
+        if dynamicRecipe then
+          foundRecipes[dynamicRecipe.id] = true
+          saveRecipeCooldown(professionKey, dynamicRecipe, cooldown, captureCraftReagents(index))
+        end
+      end
+
       for _, recipeDef in ipairs(recipeDefinitions) do
         if recipeMatchesName(recipeDef, recipeName) then
           foundRecipes[recipeDef.id] = true
-          saveRecipeCooldown(professionKey, recipeDef, GetCraftCooldown and GetCraftCooldown(index), captureCraftReagents(index))
+          saveRecipeCooldown(professionKey, recipeDef, cooldown, captureCraftReagents(index))
           break
         end
       end
@@ -1313,7 +1428,7 @@ local function buildEntries()
         })
       else
         local learnedAny = nil
-        for _, recipeDef in ipairs(KNOWN_COOLDOWNS[professionKey]) do
+        for _, recipeDef in ipairs(getRecipesForProfession(professionKey)) do
           local recipeState = CCD.db.recipes[recipeDef.id]
           if recipeState and recipeState.learned then
             learnedAny = true
