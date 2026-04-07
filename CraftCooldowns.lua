@@ -5,14 +5,201 @@ _G.CraftCooldowns = CCD
 
 local locale = GetLocale and GetLocale() or "enUS"
 
+local STRINGS = {
+  enUS = {
+    unknown = "Unknown",
+    ready = "Ready",
+    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
+    materials_for = "Materials for ",
+    are_partially_in_bank = " are partially in the bank:",
+    missing_materials_for = "Missing materials for ",
+    recipe_not_learned = "Recipe is not learned.",
+    cooldown_not_ready = "Cooldown is not ready yet.",
+    recipe_not_visible = "Recipe is not visible in the open profession window.",
+    automatic_craft_failed = "Automatic craft could not be started.",
+    atsw_could_not_select = "ATSW could not select the recipe.",
+    atsw_selected_other = "ATSW selected a different recipe: ",
+    open_profession_once = "Open profession once to scan recipes",
+    no_learned_recipe = "No learned cooldown recipe found",
+    no_professions = "No professions with known craft cooldowns found",
+    craft_now = "Craft now",
+    minimap_left_click = "Left-click: toggle window",
+    minimap_drag = "Drag: move button",
+    title = "Craft Cooldowns",
+  },
+  deDE = {
+    unknown = "Unbekannt",
+    ready = "Frei",
+    no_bank_snapshot = "Kein Bank-Snapshot. Einmal Bank oeffnen.",
+    materials_for = "Materialien fuer ",
+    are_partially_in_bank = " sind teilweise auf der Bank:",
+    missing_materials_for = "Fehlende Materialien fuer ",
+    recipe_not_learned = "Rezept ist nicht gelernt.",
+    cooldown_not_ready = "Cooldown ist noch nicht bereit.",
+    recipe_not_visible = "Rezept im offenen Berufsfenster nicht sichtbar.",
+    automatic_craft_failed = "Automatischer Craft konnte nicht gestartet werden.",
+    atsw_could_not_select = "ATSW konnte das Rezept nicht auswaehlen.",
+    atsw_selected_other = "ATSW hat ein anderes Rezept ausgewaehlt: ",
+    open_profession_once = "Beruf einmal oeffnen, um Rezepte zu scannen",
+    no_learned_recipe = "Kein gelerntes Cooldown-Rezept gefunden",
+    no_professions = "Keine Berufe mit bekannten Craft-Cooldowns gefunden",
+    craft_now = "Jetzt herstellen",
+    minimap_left_click = "Linksklick: Fenster ein/aus",
+    minimap_drag = "Ziehen: Button verschieben",
+    title = "Craft Cooldowns",
+  },
+  frFR = {
+    unknown = "Inconnu",
+    ready = "Pret",
+    no_bank_snapshot = "Aucun instantane de banque. Ouvrez la banque une fois.",
+    materials_for = "Materiaux pour ",
+    are_partially_in_bank = " sont en partie a la banque :",
+    missing_materials_for = "Materiaux manquants pour ",
+    recipe_not_learned = "La recette n'est pas apprise.",
+    cooldown_not_ready = "Le temps de recharge n'est pas pret.",
+    recipe_not_visible = "La recette n'est pas visible dans la fenetre de metier ouverte.",
+    automatic_craft_failed = "Le craft automatique n'a pas pu demarrer.",
+    atsw_could_not_select = "ATSW n'a pas pu selectionner la recette.",
+    atsw_selected_other = "ATSW a selectionne une autre recette : ",
+    open_profession_once = "Ouvrez le metier une fois pour analyser les recettes",
+    no_learned_recipe = "Aucune recette a recharge connue n'a ete trouvee",
+    no_professions = "Aucun metier avec des crafts a recharge connus n'a ete trouve",
+    craft_now = "Fabriquer",
+    minimap_left_click = "Clic gauche : afficher ou masquer la fenetre",
+    minimap_drag = "Glisser : deplacer le bouton",
+    title = "Craft Cooldowns",
+  },
+  esES = {
+    unknown = "Desconocido",
+    ready = "Listo",
+    no_bank_snapshot = "Aun no hay instantanea del banco. Abre el banco una vez.",
+    materials_for = "Materiales para ",
+    are_partially_in_bank = " estan parcialmente en el banco:",
+    missing_materials_for = "Materiales que faltan para ",
+    recipe_not_learned = "La receta no esta aprendida.",
+    cooldown_not_ready = "El tiempo de reutilizacion aun no esta listo.",
+    recipe_not_visible = "La receta no esta visible en la ventana de profesion abierta.",
+    automatic_craft_failed = "No se pudo iniciar la fabricacion automatica.",
+    atsw_could_not_select = "ATSW no pudo seleccionar la receta.",
+    atsw_selected_other = "ATSW selecciono una receta diferente: ",
+    open_profession_once = "Abre la profesion una vez para escanear las recetas",
+    no_learned_recipe = "No se encontro ninguna receta con reutilizacion aprendida",
+    no_professions = "No se encontraron profesiones con cooldowns conocidos",
+    craft_now = "Fabricar ahora",
+    minimap_left_click = "Clic izquierdo: mostrar u ocultar ventana",
+    minimap_drag = "Arrastrar: mover boton",
+    title = "Craft Cooldowns",
+  },
+  ruRU = {
+    unknown = "Neizvestno",
+    ready = "Gotovo",
+    no_bank_snapshot = "Net snimka banka. Otkroyte bank odin raz.",
+    materials_for = "Materialy dlya ",
+    are_partially_in_bank = " chastichno lezhat v banke:",
+    missing_materials_for = "Ne hvataet materialov dlya ",
+    recipe_not_learned = "Retsept ne izuchen.",
+    cooldown_not_ready = "Vremya vosstanovleniya eshche ne zakonchilos.",
+    recipe_not_visible = "Retsept ne vidim v otkrytom okne professii.",
+    automatic_craft_failed = "Ne udalos zapustit avtomaticheskiy kraft.",
+    atsw_could_not_select = "ATSW ne smog vybrat retsept.",
+    atsw_selected_other = "ATSW vybral drugoy retsept: ",
+    open_profession_once = "Otkroyte professiyu odin raz, chtoby proskenirovat retsepty",
+    no_learned_recipe = "Ne naydeno izuchennyh retseptov s kuldaunom",
+    no_professions = "Ne naydeno professiy s izvestnymi kuldaunami krafta",
+    craft_now = "Sozdat",
+    minimap_left_click = "Levyy klik: pokazat ili skryt okno",
+    minimap_drag = "Peretashchit: peremestit knopku",
+    title = "Craft Cooldowns",
+  },
+  zhCN = {
+    unknown = "Unknown",
+    ready = "Ready",
+    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
+    materials_for = "Materials for ",
+    are_partially_in_bank = " are partially in the bank:",
+    missing_materials_for = "Missing materials for ",
+    recipe_not_learned = "Recipe is not learned.",
+    cooldown_not_ready = "Cooldown is not ready yet.",
+    recipe_not_visible = "Recipe is not visible in the open profession window.",
+    automatic_craft_failed = "Automatic craft could not be started.",
+    atsw_could_not_select = "ATSW could not select the recipe.",
+    atsw_selected_other = "ATSW selected a different recipe: ",
+    open_profession_once = "Open profession once to scan recipes",
+    no_learned_recipe = "No learned cooldown recipe found",
+    no_professions = "No professions with known craft cooldowns found",
+    craft_now = "Craft now",
+    minimap_left_click = "Left-click: toggle window",
+    minimap_drag = "Drag: move button",
+    title = "Craft Cooldowns",
+  },
+  koKR = {
+    unknown = "Unknown",
+    ready = "Ready",
+    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
+    materials_for = "Materials for ",
+    are_partially_in_bank = " are partially in the bank:",
+    missing_materials_for = "Missing materials for ",
+    recipe_not_learned = "Recipe is not learned.",
+    cooldown_not_ready = "Cooldown is not ready yet.",
+    recipe_not_visible = "Recipe is not visible in the open profession window.",
+    automatic_craft_failed = "Automatic craft could not be started.",
+    atsw_could_not_select = "ATSW could not select the recipe.",
+    atsw_selected_other = "ATSW selected a different recipe: ",
+    open_profession_once = "Open profession once to scan recipes",
+    no_learned_recipe = "No learned cooldown recipe found",
+    no_professions = "No professions with known craft cooldowns found",
+    craft_now = "Craft now",
+    minimap_left_click = "Left-click: toggle window",
+    minimap_drag = "Drag: move button",
+    title = "Craft Cooldowns",
+  },
+  zhTW = {
+    unknown = "Unknown",
+    ready = "Ready",
+    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
+    materials_for = "Materials for ",
+    are_partially_in_bank = " are partially in the bank:",
+    missing_materials_for = "Missing materials for ",
+    recipe_not_learned = "Recipe is not learned.",
+    cooldown_not_ready = "Cooldown is not ready yet.",
+    recipe_not_visible = "Recipe is not visible in the open profession window.",
+    automatic_craft_failed = "Automatic craft could not be started.",
+    atsw_could_not_select = "ATSW could not select the recipe.",
+    atsw_selected_other = "ATSW selected a different recipe: ",
+    open_profession_once = "Open profession once to scan recipes",
+    no_learned_recipe = "No learned cooldown recipe found",
+    no_professions = "No professions with known craft cooldowns found",
+    craft_now = "Craft now",
+    minimap_left_click = "Left-click: toggle window",
+    minimap_drag = "Drag: move button",
+    title = "Craft Cooldowns",
+  },
+}
+
+local L = STRINGS[locale] or STRINGS.enUS
+
 local LOCALIZED_PROFESSIONS = {
   Alchemy = {
     enUS = "Alchemy",
     deDE = "Alchimie",
+    frFR = "Alchimie",
+    esES = "Alquimia",
+    ruRU = "Alhimija",
+    zhCN = "Alchemy",
+    koKR = "Alchemy",
+    zhTW = "Alchemy",
+    spellId = 2259,
   },
   Tailoring = {
     enUS = "Tailoring",
     deDE = "Schneiderei",
+    frFR = "Couture",
+    esES = "Sastreria",
+    ruRU = "Portnyazhnoe delo",
+    zhCN = "Tailoring",
+    koKR = "Tailoring",
+    zhTW = "Tailoring",
+    spellId = 3908,
   },
 }
 
@@ -80,7 +267,7 @@ local function trim(value)
 end
 
 local function getCharKey()
-  local playerName = UnitName("player") or "Unknown"
+  local playerName = UnitName("player") or L.unknown
   local realmName = GetRealmName and GetRealmName() or ""
 
   if realmName and realmName ~= "" then
@@ -125,10 +312,24 @@ local function getProfessionDisplayName(professionKey)
     return professionKey
   end
 
+  if data.spellId and GetSpellInfo then
+    local spellName = GetSpellInfo(data.spellId)
+    if spellName and spellName ~= "" then
+      return spellName
+    end
+  end
+
   return data[locale] or data.enUS or professionKey
 end
 
 local function getRecipeDisplayName(recipeDef)
+  if recipeDef.spellId and GetSpellInfo then
+    local spellName = GetSpellInfo(recipeDef.spellId)
+    if spellName and spellName ~= "" then
+      return spellName
+    end
+  end
+
   return recipeDef.names[locale] or recipeDef.names.enUS or recipeDef.id
 end
 
@@ -224,8 +425,18 @@ local function getProfessionKeyByLocalizedName(name)
   end
 
   for professionKey, localized in pairs(LOCALIZED_PROFESSIONS) do
-    if name == professionKey or name == localized.enUS or name == localized.deDE then
+    if name == professionKey then
       return professionKey
+    end
+
+    if localized.spellId and GetSpellInfo and name == GetSpellInfo(localized.spellId) then
+      return professionKey
+    end
+
+    for _, localizedName in pairs(localized) do
+      if type(localizedName) == "string" and name == localizedName then
+        return professionKey
+      end
     end
   end
 
@@ -240,6 +451,13 @@ local function recipeMatchesName(recipeDef, recipeName)
 
   for _, localizedName in pairs(recipeDef.names) do
     if loweredName == lowercase(localizedName) then
+      return true
+    end
+  end
+
+  if recipeDef.spellId and GetSpellInfo then
+    local spellName = GetSpellInfo(recipeDef.spellId)
+    if spellName and loweredName == lowercase(spellName) then
       return true
     end
   end
@@ -842,10 +1060,9 @@ local function printMaterialMessage(recipeId, materialState)
   local snapshotMissing = not (CCD.db.bank and CCD.db.bank.lastUpdate and CCD.db.bank.lastUpdate > 0)
 
   if materialState.hasEnoughTotal and not materialState.canCraftFromBags then
-    printMessage((locale == "deDE" and "Materialien fuer " or "Materials for ") .. recipeName ..
-      (locale == "deDE" and " sind teilweise auf der Bank:" or " are partially in the bank:"))
+    printMessage(L.materials_for .. recipeName .. L.are_partially_in_bank)
   else
-    printMessage((locale == "deDE" and "Fehlende Materialien fuer " or "Missing materials for ") .. recipeName .. ":")
+    printMessage(L.missing_materials_for .. recipeName .. ":")
   end
 
   local combatLines = {}
@@ -861,7 +1078,7 @@ local function printMaterialMessage(recipeId, materialState)
   end
 
   if snapshotMissing then
-    local snapshotMessage = locale == "deDE" and "Kein Bank-Snapshot. Einmal Bank oeffnen." or "No bank snapshot yet. Open bank once."
+    local snapshotMessage = L.no_bank_snapshot
     printMessage(snapshotMessage)
     printCombatMessage(snapshotMessage, 1.0, 0.1, 0.1)
   end
@@ -880,7 +1097,7 @@ local function tryCraftRecipe(recipeId)
 
   local recipeState = CCD.db.recipes[recipeId]
   if not recipeState or not recipeState.learned then
-    notifyMessage(locale == "deDE" and "Rezept ist nicht gelernt." or "Recipe is not learned.", 1.0, 0.1, 0.1)
+    notifyMessage(L.recipe_not_learned, 1.0, 0.1, 0.1)
     CCD.pendingCraftRecipeId = nil
     CCD.pendingCraftOpenRecipeId = nil
     CCD.pendingCraftDeadline = nil
@@ -890,7 +1107,7 @@ local function tryCraftRecipe(recipeId)
   end
 
   if recipeState.expiresAt and recipeState.expiresAt > time() then
-    notifyMessage(locale == "deDE" and "Cooldown ist noch nicht bereit." or "Cooldown is not ready yet.", 1.0, 0.1, 0.1)
+    notifyMessage(L.cooldown_not_ready, 1.0, 0.1, 0.1)
     CCD.pendingCraftRecipeId = nil
     CCD.pendingCraftOpenRecipeId = nil
     CCD.pendingCraftDeadline = nil
@@ -957,7 +1174,7 @@ local function tryCraftRecipe(recipeId)
       return
     end
 
-    notifyMessage(locale == "deDE" and "Rezept im offenen Berufsfenster nicht sichtbar." or "Recipe is not visible in the open profession window.", 1.0, 0.1, 0.1)
+    notifyMessage(L.recipe_not_visible, 1.0, 0.1, 0.1)
     CCD.pendingCraftRecipeId = nil
     CCD.pendingCraftOpenRecipeId = nil
     CCD.pendingCraftDeadline = nil
@@ -981,13 +1198,13 @@ processPendingCraftRequest = function()
 
   local now = GetTime and GetTime() or 0
   if CCD.pendingCraftDeadline and now > CCD.pendingCraftDeadline then
-    local reason = locale == "deDE" and "Automatischer Craft konnte nicht gestartet werden." or "Automatic craft could not be started."
+    local reason = L.automatic_craft_failed
     if isVisible(_G.ATSWFrame) and _G.ATSW_RecipeSelected then
       local selectedName = _G.ATSW_RecipeSelected()
       if not selectedName or selectedName == "" then
-        reason = locale == "deDE" and "ATSW konnte das Rezept nicht auswaehlen." or "ATSW could not select the recipe."
+        reason = L.atsw_could_not_select
       else
-        reason = (locale == "deDE" and "ATSW hat ein anderes Rezept ausgewaehlt: " or "ATSW selected a different recipe: ") .. selectedName
+        reason = L.atsw_selected_other .. selectedName
       end
     end
     notifyMessage(reason, 1.0, 0.1, 0.1)
@@ -1090,7 +1307,7 @@ local function buildEntries()
 
       if not CCD.db.scanned[professionKey] then
         table.insert(entries, {
-          label = locale == "deDE" and "Beruf einmal oeffnen, um Rezepte zu scannen" or "Open profession once to scan recipes",
+          label = L.open_profession_once,
           status = "",
           isHint = true,
         })
@@ -1108,7 +1325,7 @@ local function buildEntries()
 
             table.insert(entries, {
               label = "  " .. getRecipeDisplayName(recipeDef),
-              status = remaining > 0 and formatDuration(remaining) or (locale == "deDE" and "Frei" or "Ready"),
+              status = remaining > 0 and formatDuration(remaining) or L.ready,
               isReady = remaining <= 0,
               isCooldown = remaining > 0,
               recipeId = recipeDef.id,
@@ -1118,7 +1335,7 @@ local function buildEntries()
 
         if not learnedAny then
           table.insert(entries, {
-            label = locale == "deDE" and "Kein gelerntes Cooldown-Rezept gefunden" or "No learned cooldown recipe found",
+            label = L.no_learned_recipe,
             status = "",
             isHint = true,
           })
@@ -1129,7 +1346,7 @@ local function buildEntries()
 
   if not hasAnyProfession then
     table.insert(entries, {
-      label = locale == "deDE" and "Keine Berufe mit bekannten Craft-Cooldowns gefunden" or "No professions with known craft cooldowns found",
+      label = L.no_professions,
       status = "",
       isHint = true,
     })
@@ -1173,7 +1390,7 @@ local function ensureRows(count)
     end)
     row.button:SetScript("OnEnter", function()
       GameTooltip:SetOwner(this, "ANCHOR_LEFT")
-      GameTooltip:AddLine(locale == "deDE" and "Jetzt herstellen" or "Craft now")
+      GameTooltip:AddLine(L.craft_now)
       GameTooltip:Show()
     end)
     row.button:SetScript("OnLeave", function()
@@ -1291,7 +1508,7 @@ local function createFrame()
 
   local title = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
   title:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -10)
-  title:SetText(locale == "deDE" and "Craft Cooldowns" or "Craft Cooldowns")
+  title:SetText(L.title)
 
   frame.measureFS = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   frame.measureFS:Hide()
@@ -1419,9 +1636,9 @@ local function createMinimapButton()
 
   button:SetScript("OnEnter", function()
     GameTooltip:SetOwner(this, "ANCHOR_LEFT")
-    GameTooltip:AddLine("Craft Cooldowns")
-    GameTooltip:AddLine(locale == "deDE" and "Linksklick: Fenster ein/aus" or "Left-click: toggle window", 1, 1, 1)
-    GameTooltip:AddLine(locale == "deDE" and "Ziehen: Button verschieben" or "Drag: move button", 0.7, 0.7, 0.7)
+    GameTooltip:AddLine(L.title)
+    GameTooltip:AddLine(L.minimap_left_click, 1, 1, 1)
+    GameTooltip:AddLine(L.minimap_drag, 0.7, 0.7, 0.7)
     GameTooltip:Show()
   end)
 
