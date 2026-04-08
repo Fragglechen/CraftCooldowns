@@ -692,14 +692,46 @@ end
 
 local function getRecipesForProfession(professionKey)
   local recipes = {}
+  local seen = {}
+
+  local function makeRecipeKey(recipeDef)
+    if not recipeDef then
+      return nil
+    end
+
+    local displayName = getRecipeDisplayName(recipeDef)
+    if displayName and displayName ~= "" then
+      return lowercase(trim(displayName))
+    end
+
+    if recipeDef.names then
+      for _, localizedName in pairs(recipeDef.names) do
+        if localizedName and localizedName ~= "" then
+          return lowercase(trim(localizedName))
+        end
+      end
+    end
+
+    return recipeDef.id
+  end
+
+  local function addRecipe(recipeDef)
+    local key = makeRecipeKey(recipeDef)
+    if not key or seen[key] then
+      return
+    end
+
+    seen[key] = true
+    table.insert(recipes, recipeDef)
+  end
 
   for _, recipeDef in ipairs(KNOWN_COOLDOWNS[professionKey] or {}) do
-    table.insert(recipes, recipeDef)
+    addRecipe(recipeDef)
   end
 
   if CCD.db and CCD.db.dynamicRecipes and CCD.db.dynamicRecipes[professionKey] then
     for _, recipeDef in pairs(CCD.db.dynamicRecipes[professionKey]) do
-      table.insert(recipes, recipeDef)
+      addRecipe(recipeDef)
     end
   end
 
@@ -824,6 +856,13 @@ local function rememberDynamicCooldownRecipe(professionKey, recipeName)
   end
 
   CCD.db.dynamicRecipes[professionKey] = CCD.db.dynamicRecipes[professionKey] or {}
+
+  for _, recipeDef in ipairs(KNOWN_COOLDOWNS[professionKey] or {}) do
+    if recipeMatchesName(recipeDef, recipeName) then
+      registerRecipeDef(recipeDef, professionKey)
+      return recipeDef
+    end
+  end
 
   for recipeId, recipeDef in pairs(CCD.db.dynamicRecipes[professionKey]) do
     if recipeMatchesName(recipeDef, recipeName) then

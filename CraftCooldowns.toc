@@ -2,7 +2,7 @@
 ## Title: Craft Cooldowns
 ## Notes: Shows profession cooldown recipes in a movable frame with timers and quick craft buttons.
 ## Author: Fragglechen
-## Version: 1.0.1
+## Version: 1.0.2
 ## SavedVariablesPerCharacter: CraftCooldownsDB
 
 CraftCooldowns.lua

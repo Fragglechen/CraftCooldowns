@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2
+
+- Fixed duplicate recipe entries that could appear during active cooldowns
+- Improved recipe deduplication between static and dynamically discovered cooldown recipes
+- Refined options window layout and control placement
+- Added full localization coverage for newer options and ready notification texts
+
 ## 1.0.1
 
 - Added Gardening and Survival profession support
