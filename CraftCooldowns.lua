@@ -13,6 +13,10 @@ local STRINGS = {
     materials_for = "Materials for ",
     are_partially_in_bank = " are partially in the bank:",
     missing_materials_for = "Missing materials for ",
+    materials_for_recipe = "Materials for %s are partially in the bank:",
+    missing_materials_for_recipe = "Missing materials for %s:",
+    materials_line_total = "%s: %d/%d (Bags %d, Bank %d)",
+    materials_line_bags_bank = "%s: Bags %d/%d, Bank %d",
     recipe_not_learned = "Recipe is not learned.",
     cooldown_not_ready = "Cooldown is not ready yet.",
     recipe_not_visible = "Recipe is not visible in the open profession window.",
@@ -40,6 +44,8 @@ local STRINGS = {
     no_config_recipes = "No learned cooldown recipes available yet.",
     options_test = "Test",
     ready_again = "%s is ready again",
+    ready_multiple = "Ready again: %s",
+    test_recipe_name = "Mooncloth",
   },
   deDE = {
     unknown = "Unbekannt",
@@ -48,6 +54,10 @@ local STRINGS = {
     materials_for = "Materialien fuer ",
     are_partially_in_bank = " sind teilweise auf der Bank:",
     missing_materials_for = "Fehlende Materialien fuer ",
+    materials_for_recipe = "Materialien fuer %s sind teilweise auf der Bank:",
+    missing_materials_for_recipe = "Fehlende Materialien fuer %s:",
+    materials_line_total = "%s: %d/%d (Taschen %d, Bank %d)",
+    materials_line_bags_bank = "%s: Taschen %d/%d, Bank %d",
     recipe_not_learned = "Rezept ist nicht gelernt.",
     cooldown_not_ready = "Cooldown ist noch nicht bereit.",
     recipe_not_visible = "Rezept im offenen Berufsfenster nicht sichtbar.",
@@ -75,6 +85,8 @@ local STRINGS = {
     no_config_recipes = "Noch keine gelernten Cooldown-Rezepte verfuegbar.",
     options_test = "Test",
     ready_again = "%s ist wieder bereit",
+    ready_multiple = "Wieder bereit: %s",
+    test_recipe_name = "Mondstoff",
   },
   frFR = {
     unknown = "Inconnu",
@@ -83,6 +95,10 @@ local STRINGS = {
     materials_for = "Materiaux pour ",
     are_partially_in_bank = " sont en partie a la banque :",
     missing_materials_for = "Materiaux manquants pour ",
+    materials_for_recipe = "Les materiaux pour %s sont en partie a la banque :",
+    missing_materials_for_recipe = "Materiaux manquants pour %s :",
+    materials_line_total = "%s : %d/%d (Sacs %d, Banque %d)",
+    materials_line_bags_bank = "%s : Sacs %d/%d, Banque %d",
     recipe_not_learned = "La recette n'est pas apprise.",
     cooldown_not_ready = "Le temps de recharge n'est pas pret.",
     recipe_not_visible = "La recette n'est pas visible dans la fenetre de metier ouverte.",
@@ -110,6 +126,8 @@ local STRINGS = {
     no_config_recipes = "Aucune recette a cooldown apprise disponible.",
     options_test = "Test",
     ready_again = "%s est de nouveau disponible",
+    ready_multiple = "De nouveau disponibles : %s",
+    test_recipe_name = "Etoffe lunaire",
   },
   esES = {
     unknown = "Desconocido",
@@ -118,6 +136,10 @@ local STRINGS = {
     materials_for = "Materiales para ",
     are_partially_in_bank = " estan parcialmente en el banco:",
     missing_materials_for = "Materiales que faltan para ",
+    materials_for_recipe = "Los materiales para %s estan parcialmente en el banco:",
+    missing_materials_for_recipe = "Materiales que faltan para %s:",
+    materials_line_total = "%s: %d/%d (Bolsas %d, Banco %d)",
+    materials_line_bags_bank = "%s: Bolsas %d/%d, Banco %d",
     recipe_not_learned = "La receta no esta aprendida.",
     cooldown_not_ready = "El tiempo de reutilizacion aun no esta listo.",
     recipe_not_visible = "La receta no esta visible en la ventana de profesion abierta.",
@@ -145,6 +167,8 @@ local STRINGS = {
     no_config_recipes = "Aun no hay recetas con cooldown aprendidas.",
     options_test = "Probar",
     ready_again = "%s vuelve a estar disponible",
+    ready_multiple = "Disponibles de nuevo: %s",
+    test_recipe_name = "Tela lunar",
   },
   ruRU = {
     unknown = "Neizvestno",
@@ -153,6 +177,10 @@ local STRINGS = {
     materials_for = "Materialy dlya ",
     are_partially_in_bank = " chastichno lezhat v banke:",
     missing_materials_for = "Ne hvataet materialov dlya ",
+    materials_for_recipe = "Materialy dlya %s chastichno lezhat v banke:",
+    missing_materials_for_recipe = "Ne hvataet materialov dlya %s:",
+    materials_line_total = "%s: %d/%d (Sumki %d, Bank %d)",
+    materials_line_bags_bank = "%s: Sumki %d/%d, Bank %d",
     recipe_not_learned = "Retsept ne izuchen.",
     cooldown_not_ready = "Vremya vosstanovleniya eshche ne zakonchilos.",
     recipe_not_visible = "Retsept ne vidim v otkrytom okne professii.",
@@ -180,111 +208,131 @@ local STRINGS = {
     no_config_recipes = "Net dostupnyh izuchennyh retseptov s kuldaunom.",
     options_test = "Test",
     ready_again = "%s snova gotov",
+    ready_multiple = "Snova gotovy: %s",
+    test_recipe_name = "Lunnaya tkan",
   },
   zhCN = {
-    unknown = "Unknown",
-    ready = "Ready",
-    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
-    materials_for = "Materials for ",
-    are_partially_in_bank = " are partially in the bank:",
-    missing_materials_for = "Missing materials for ",
-    recipe_not_learned = "Recipe is not learned.",
-    cooldown_not_ready = "Cooldown is not ready yet.",
-    recipe_not_visible = "Recipe is not visible in the open profession window.",
-    automatic_craft_failed = "Automatic craft could not be started.",
-    atsw_could_not_select = "ATSW could not select the recipe.",
-    atsw_selected_other = "ATSW selected a different recipe: ",
-    open_profession_once = "Open profession once to scan recipes",
-    no_learned_recipe = "No learned cooldown recipe found",
-    no_professions = "No professions with known craft cooldowns found",
-    craft_now = "Craft now",
-    minimap_left_click = "Left-click: toggle window",
-    minimap_right_click = "Right-click: open options",
-    minimap_drag = "Drag: move button",
+    unknown = "未知",
+    ready = "就绪",
+    no_bank_snapshot = "还没有银行快照。请先打开一次银行。",
+    materials_for = "",
+    are_partially_in_bank = " 的部分材料在银行中：",
+    missing_materials_for = "",
+    materials_for_recipe = "%s 的部分材料在银行中：",
+    missing_materials_for_recipe = "%s 缺少以下材料：",
+    materials_line_total = "%s: %d/%d（背包 %d，银行 %d）",
+    materials_line_bags_bank = "%s: 背包 %d/%d，银行 %d",
+    recipe_not_learned = "尚未学会该配方。",
+    cooldown_not_ready = "冷却时间尚未结束。",
+    recipe_not_visible = "该配方在当前打开的专业窗口中不可见。",
+    automatic_craft_failed = "无法启动自动制作。",
+    atsw_could_not_select = "ATSW 无法选中该配方。",
+    atsw_selected_other = "ATSW 选中了其他配方：",
+    open_profession_once = "请打开一次专业窗口以扫描配方",
+    no_learned_recipe = "未找到已学会的冷却配方",
+    no_professions = "未找到已知制作冷却的专业",
+    craft_now = "立即制作",
+    minimap_left_click = "左键：显示或隐藏窗口",
+    minimap_right_click = "右键：打开选项",
+    minimap_drag = "拖动：移动按钮",
     title = "Craft Cooldowns",
-    options_title = "Craft Cooldowns Options",
-    options_save = "Save",
-    options_show_minimap = "Show minimap button",
-    options_lock_frame = "Lock cooldown frame",
-    options_show_profession_headers = "Show profession headers",
-    options_ready_sound = "Play ready sound",
-    options_ready_message = "Show ready message",
-    options_recipe_list = "Cooldown recipes",
-    options_button_tooltip = "Open options",
-    no_enabled_recipe = "No enabled cooldown recipe selected",
-    no_config_recipes = "No learned cooldown recipes available yet.",
-    options_test = "Test",
-    ready_again = "%s is ready again",
+    options_title = "Craft Cooldowns 选项",
+    options_save = "保存",
+    options_show_minimap = "显示小地图按钮",
+    options_lock_frame = "锁定冷却窗口",
+    options_show_profession_headers = "显示专业标题",
+    options_ready_sound = "播放就绪提示音",
+    options_ready_message = "显示就绪提示",
+    options_recipe_list = "冷却配方",
+    options_button_tooltip = "打开选项",
+    no_enabled_recipe = "未选择启用的冷却配方",
+    no_config_recipes = "还没有可用的已学会冷却配方。",
+    options_test = "测试",
+    ready_again = "%s 已再次就绪",
+    ready_multiple = "已再次就绪：%s",
+    test_recipe_name = "月布",
   },
   koKR = {
-    unknown = "Unknown",
-    ready = "Ready",
-    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
-    materials_for = "Materials for ",
-    are_partially_in_bank = " are partially in the bank:",
-    missing_materials_for = "Missing materials for ",
-    recipe_not_learned = "Recipe is not learned.",
-    cooldown_not_ready = "Cooldown is not ready yet.",
-    recipe_not_visible = "Recipe is not visible in the open profession window.",
-    automatic_craft_failed = "Automatic craft could not be started.",
-    atsw_could_not_select = "ATSW could not select the recipe.",
-    atsw_selected_other = "ATSW selected a different recipe: ",
-    open_profession_once = "Open profession once to scan recipes",
-    no_learned_recipe = "No learned cooldown recipe found",
-    no_professions = "No professions with known craft cooldowns found",
-    craft_now = "Craft now",
-    minimap_left_click = "Left-click: toggle window",
-    minimap_right_click = "Right-click: open options",
-    minimap_drag = "Drag: move button",
+    unknown = "알 수 없음",
+    ready = "준비",
+    no_bank_snapshot = "은행 스냅샷이 없습니다. 은행을 한 번 열어 주세요.",
+    materials_for = "",
+    are_partially_in_bank = " 재료 일부가 은행에 있습니다:",
+    missing_materials_for = "",
+    materials_for_recipe = "%s 재료 일부가 은행에 있습니다:",
+    missing_materials_for_recipe = "%s 제작에 필요한 재료가 부족합니다:",
+    materials_line_total = "%s: %d/%d (가방 %d, 은행 %d)",
+    materials_line_bags_bank = "%s: 가방 %d/%d, 은행 %d",
+    recipe_not_learned = "해당 제조법을 배우지 않았습니다.",
+    cooldown_not_ready = "재사용 대기시간이 아직 끝나지 않았습니다.",
+    recipe_not_visible = "열린 전문 기술 창에서 해당 제조법이 보이지 않습니다.",
+    automatic_craft_failed = "자동 제작을 시작할 수 없습니다.",
+    atsw_could_not_select = "ATSW가 제조법을 선택하지 못했습니다.",
+    atsw_selected_other = "ATSW가 다른 제조법을 선택했습니다: ",
+    open_profession_once = "제조법을 스캔하려면 전문 기술 창을 한 번 열어 주세요",
+    no_learned_recipe = "배운 쿨다운 제조법을 찾지 못했습니다",
+    no_professions = "알려진 제작 쿨다운이 있는 전문 기술을 찾지 못했습니다",
+    craft_now = "지금 제작",
+    minimap_left_click = "왼쪽 클릭: 창 표시 또는 숨기기",
+    minimap_right_click = "오른쪽 클릭: 옵션 열기",
+    minimap_drag = "드래그: 버튼 이동",
     title = "Craft Cooldowns",
-    options_title = "Craft Cooldowns Options",
-    options_save = "Save",
-    options_show_minimap = "Show minimap button",
-    options_lock_frame = "Lock cooldown frame",
-    options_show_profession_headers = "Show profession headers",
-    options_ready_sound = "Play ready sound",
-    options_ready_message = "Show ready message",
-    options_recipe_list = "Cooldown recipes",
-    options_button_tooltip = "Open options",
-    no_enabled_recipe = "No enabled cooldown recipe selected",
-    no_config_recipes = "No learned cooldown recipes available yet.",
-    options_test = "Test",
-    ready_again = "%s is ready again",
+    options_title = "Craft Cooldowns 옵션",
+    options_save = "저장",
+    options_show_minimap = "미니맵 버튼 표시",
+    options_lock_frame = "쿨다운 창 잠금",
+    options_show_profession_headers = "전문 기술 제목 표시",
+    options_ready_sound = "준비 소리 재생",
+    options_ready_message = "준비 메시지 표시",
+    options_recipe_list = "쿨다운 제조법",
+    options_button_tooltip = "옵션 열기",
+    no_enabled_recipe = "활성화된 쿨다운 제조법이 없습니다",
+    no_config_recipes = "사용 가능한 배운 쿨다운 제조법이 아직 없습니다.",
+    options_test = "테스트",
+    ready_again = "%s 사용 가능",
+    ready_multiple = "다시 사용 가능: %s",
+    test_recipe_name = "달빛 옷감",
   },
   zhTW = {
-    unknown = "Unknown",
-    ready = "Ready",
-    no_bank_snapshot = "No bank snapshot yet. Open bank once.",
-    materials_for = "Materials for ",
-    are_partially_in_bank = " are partially in the bank:",
-    missing_materials_for = "Missing materials for ",
-    recipe_not_learned = "Recipe is not learned.",
-    cooldown_not_ready = "Cooldown is not ready yet.",
-    recipe_not_visible = "Recipe is not visible in the open profession window.",
-    automatic_craft_failed = "Automatic craft could not be started.",
-    atsw_could_not_select = "ATSW could not select the recipe.",
-    atsw_selected_other = "ATSW selected a different recipe: ",
-    open_profession_once = "Open profession once to scan recipes",
-    no_learned_recipe = "No learned cooldown recipe found",
-    no_professions = "No professions with known craft cooldowns found",
-    craft_now = "Craft now",
-    minimap_left_click = "Left-click: toggle window",
-    minimap_right_click = "Right-click: open options",
-    minimap_drag = "Drag: move button",
+    unknown = "未知",
+    ready = "就緒",
+    no_bank_snapshot = "尚未建立銀行快照。請先打開一次銀行。",
+    materials_for = "",
+    are_partially_in_bank = " 的部分材料在銀行：",
+    missing_materials_for = "",
+    materials_for_recipe = "%s 的部分材料在銀行：",
+    missing_materials_for_recipe = "%s 缺少以下材料：",
+    materials_line_total = "%s: %d/%d（背包 %d，銀行 %d）",
+    materials_line_bags_bank = "%s: 背包 %d/%d，銀行 %d",
+    recipe_not_learned = "尚未學會此配方。",
+    cooldown_not_ready = "冷卻時間尚未結束。",
+    recipe_not_visible = "此配方在目前開啟的專業視窗中不可見。",
+    automatic_craft_failed = "無法啟動自動製作。",
+    atsw_could_not_select = "ATSW 無法選取此配方。",
+    atsw_selected_other = "ATSW 選取了其他配方：",
+    open_profession_once = "請先打開一次專業視窗以掃描配方",
+    no_learned_recipe = "未找到已學會的冷卻配方",
+    no_professions = "未找到有已知製作冷卻的專業",
+    craft_now = "立即製作",
+    minimap_left_click = "左鍵：顯示或隱藏視窗",
+    minimap_right_click = "右鍵：開啟選項",
+    minimap_drag = "拖曳：移動按鈕",
     title = "Craft Cooldowns",
-    options_title = "Craft Cooldowns Options",
-    options_save = "Save",
-    options_show_minimap = "Show minimap button",
-    options_lock_frame = "Lock cooldown frame",
-    options_show_profession_headers = "Show profession headers",
-    options_ready_sound = "Play ready sound",
-    options_ready_message = "Show ready message",
-    options_recipe_list = "Cooldown recipes",
-    options_button_tooltip = "Open options",
-    no_enabled_recipe = "No enabled cooldown recipe selected",
-    no_config_recipes = "No learned cooldown recipes available yet.",
-    options_test = "Test",
-    ready_again = "%s is ready again",
+    options_title = "Craft Cooldowns 選項",
+    options_save = "儲存",
+    options_show_minimap = "顯示小地圖按鈕",
+    options_lock_frame = "鎖定冷卻視窗",
+    options_show_profession_headers = "顯示專業標題",
+    options_ready_sound = "播放就緒提示音",
+    options_ready_message = "顯示就緒提示",
+    options_recipe_list = "冷卻配方",
+    options_button_tooltip = "開啟選項",
+    no_enabled_recipe = "未選擇啟用的冷卻配方",
+    no_config_recipes = "尚無可用的已學會冷卻配方。",
+    options_test = "測試",
+    ready_again = "%s 已再次可用",
+    ready_multiple = "已再次可用：%s",
+    test_recipe_name = "月布",
   },
 }
 
@@ -646,7 +694,7 @@ local function initializeDatabase()
   CraftCooldownsDB.characters[charKey] = CraftCooldownsDB.characters[charKey] or {}
 
   CCD.db = CraftCooldownsDB.characters[charKey]
-  CCD.db.frame = CCD.db.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0 }
+  CCD.db.frame = CCD.db.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0, width = 220, height = 140 }
   CCD.db.configFrame = CCD.db.configFrame or { point = "CENTER", relativePoint = "CENTER", x = 20, y = -20 }
   CCD.db.minimap = CCD.db.minimap or { angle = 45 }
   CCD.db.recipes = CCD.db.recipes or {}
@@ -810,12 +858,41 @@ local function triggerReadyNotification(recipeDef)
   end
 end
 
+local function triggerReadyNotifications(recipeDefs)
+  local names = {}
+
+  for _, recipeDef in ipairs(recipeDefs or {}) do
+    table.insert(names, getRecipeDisplayName(recipeDef))
+  end
+
+  if table.getn(names) == 0 then
+    return
+  end
+
+  if table.getn(names) == 1 then
+    triggerReadyNotification(recipeDefs[1])
+    return
+  end
+
+  local message = string.format(T("ready_multiple"), table.concat(names, ", "))
+
+  if CCD.db.options.readySound then
+    playReadySound()
+  end
+
+  if CCD.db.options.readyMessage then
+    showCenterMessage(message)
+    printMessage(message)
+  end
+end
+
 local function updateReadyNotifications()
   if not CCD.db or not CCD.db.recipes then
     return
   end
 
   local now = time()
+  local readyRecipes = {}
   for recipeId, recipeState in pairs(CCD.db.recipes) do
     local recipeDef = RECIPE_BY_ID[recipeId]
     if recipeDef and recipeState and recipeState.learned then
@@ -828,12 +905,23 @@ local function updateReadyNotifications()
       elseif readyState.wasOnCooldown and not isOnCooldown then
         readyState.wasOnCooldown = false
         if isRecipeEnabled(recipeId) then
-          triggerReadyNotification(recipeDef)
+          table.insert(readyRecipes, recipeDef)
         end
       else
         readyState.wasOnCooldown = isOnCooldown and true or false
       end
     end
+  end
+
+  if table.getn(readyRecipes) > 0 then
+    table.sort(readyRecipes, function(a, b)
+      if a.profession ~= b.profession then
+        return getProfessionDisplayName(a.profession) < getProfessionDisplayName(b.profession)
+      end
+
+      return getRecipeDisplayName(a) < getRecipeDisplayName(b)
+    end)
+    triggerReadyNotifications(readyRecipes)
   end
 end
 
@@ -1463,9 +1551,9 @@ local function checkRecipeMaterials(recipeId)
 
     if total < required then
       result.hasEnoughTotal = nil
-      table.insert(result.lines, string.format("%s: %d/%d (Taschen %d, Bank %d)", reagentName, total, required, inBags, inBank))
+      table.insert(result.lines, string.format(T("materials_line_total"), reagentName, total, required, inBags, inBank))
     elseif inBags < required then
-      table.insert(result.lines, string.format("%s: Taschen %d/%d, Bank %d", reagentName, inBags, required, inBank))
+      table.insert(result.lines, string.format(T("materials_line_bags_bank"), reagentName, inBags, required, inBank))
     end
   end
 
@@ -1478,9 +1566,9 @@ local function printMaterialMessage(recipeId, materialState)
   local snapshotMissing = not (CCD.db.bank and CCD.db.bank.lastUpdate and CCD.db.bank.lastUpdate > 0)
 
   if materialState.hasEnoughTotal and not materialState.canCraftFromBags then
-    printMessage(L.materials_for .. recipeName .. L.are_partially_in_bank)
+    printMessage(string.format(T("materials_for_recipe"), recipeName))
   else
-    printMessage(L.missing_materials_for .. recipeName .. ":")
+    printMessage(string.format(T("missing_materials_for_recipe"), recipeName))
   end
 
   local combatLines = {}
@@ -1773,6 +1861,29 @@ local function buildEntries()
   return entries
 end
 
+local MAIN_FRAME_MIN_WIDTH = 220
+local MAIN_FRAME_MIN_HEIGHT = 70
+local MAIN_FRAME_MAX_WIDTH = 420
+local MAIN_FRAME_MAX_HEIGHT = 600
+
+local function clamp(value, minValue, maxValue)
+  if value < minValue then
+    return minValue
+  end
+
+  if value > maxValue then
+    return maxValue
+  end
+
+  return value
+end
+
+local function updateRowWidths(frameWidth)
+  for _, row in ipairs(CCD.rows or {}) do
+    row.left:SetWidth(math.max(70, frameWidth - 102))
+  end
+end
+
 local function ensureRows(count)
   CCD.rows = CCD.rows or {}
 
@@ -1836,12 +1947,22 @@ local function updateFrameWidth(entries)
     end
   end
 
-  local targetWidth = math.max(220, math.min(360, math.ceil(longestWidth) + 110))
-  CCD.frame:SetWidth(targetWidth)
+  local autoWidth = math.max(MAIN_FRAME_MIN_WIDTH, math.min(360, math.ceil(longestWidth) + 110))
+  local targetWidth = autoWidth
 
-  for _, row in ipairs(CCD.rows or {}) do
-    row.left:SetWidth(targetWidth - 102)
+  if CCD.db.frame.userSized and CCD.db.frame.width then
+    local storedWidth = math.max(MAIN_FRAME_MIN_WIDTH, math.min(MAIN_FRAME_MAX_WIDTH, CCD.db.frame.width))
+    if storedWidth >= autoWidth then
+      targetWidth = storedWidth
+    else
+      CCD.db.frame.userSized = nil
+      CCD.db.frame.width = autoWidth
+      CCD.db.frame.height = nil
+    end
   end
+
+  CCD.frame:SetWidth(targetWidth)
+  updateRowWidths(targetWidth)
 end
 
 local function saveConfigFramePosition()
@@ -1863,6 +1984,13 @@ local function applyFrameLockState()
 
   CCD.frame:SetMovable(not CCD.db.options.lockFrame)
   CCD.frame:RegisterForDrag("LeftButton")
+  if CCD.frame.resizeButton then
+    if CCD.db.options.lockFrame then
+      CCD.frame.resizeButton:Hide()
+    else
+      CCD.frame.resizeButton:Show()
+    end
+  end
 end
 
 local function updateConfigFrameLayout()
@@ -2128,7 +2256,7 @@ local function createConfigFrame()
       playReadySound()
     end
     if CCD.pendingOptions.readyMessage then
-      showCenterMessage(string.format(T("ready_again"), "Mooncloth"))
+      showCenterMessage(string.format(T("ready_again"), T("test_recipe_name")))
     end
   end)
 
@@ -2194,7 +2322,22 @@ refreshFrame = function()
     end
   end
 
-  local height = math.max(70, 40 + (table.getn(entries) * 18) + 14)
+  local autoHeight = math.max(MAIN_FRAME_MIN_HEIGHT, 40 + (table.getn(entries) * 18) + 14)
+  local height = autoHeight
+
+  if CCD.db.frame.userSized and CCD.db.frame.height then
+    local storedHeight = math.max(MAIN_FRAME_MIN_HEIGHT, math.min(MAIN_FRAME_MAX_HEIGHT, CCD.db.frame.height))
+    if storedHeight >= autoHeight then
+      height = storedHeight
+    else
+      CCD.db.frame.userSized = nil
+      CCD.db.frame.height = autoHeight
+      if not CCD.db.frame.width then
+        CCD.db.frame.width = CCD.frame:GetWidth()
+      end
+    end
+  end
+
   CCD.frame:SetHeight(height)
 end
 
@@ -2204,6 +2347,58 @@ local function saveFramePosition()
   CCD.db.frame.relativePoint = relativePoint
   CCD.db.frame.x = xOfs
   CCD.db.frame.y = yOfs
+  CCD.db.frame.width = CCD.frame:GetWidth()
+  CCD.db.frame.height = CCD.frame:GetHeight()
+end
+
+local function stopFrameResize()
+  CCD.isResizingFrame = nil
+
+  if CCD.frame and CCD.frame.resizeButton then
+    CCD.frame.resizeButton:SetScript("OnUpdate", nil)
+  end
+
+  if CCD.frame then
+    saveFramePosition()
+    refreshFrame()
+  end
+end
+
+local function startFrameResize()
+  if not CCD.frame or CCD.db.options.lockFrame then
+    return
+  end
+
+  local cursorX, cursorY = GetCursorPosition()
+  local scale = UIParent and UIParent.GetEffectiveScale and UIParent:GetEffectiveScale() or 1
+  cursorX = (cursorX or 0) / scale
+  cursorY = (cursorY or 0) / scale
+
+  CCD.db.frame.userSized = true
+  CCD.isResizingFrame = {
+    startCursorX = cursorX,
+    startCursorY = cursorY,
+    startWidth = CCD.frame:GetWidth() or MAIN_FRAME_MIN_WIDTH,
+    startHeight = CCD.frame:GetHeight() or MAIN_FRAME_MIN_HEIGHT,
+  }
+
+  CCD.frame.resizeButton:SetScript("OnUpdate", function()
+    if not CCD.isResizingFrame then
+      this:SetScript("OnUpdate", nil)
+      return
+    end
+
+    local currentX, currentY = GetCursorPosition()
+    currentX = (currentX or 0) / scale
+    currentY = (currentY or 0) / scale
+
+    local width = clamp(CCD.isResizingFrame.startWidth + (currentX - CCD.isResizingFrame.startCursorX), MAIN_FRAME_MIN_WIDTH, MAIN_FRAME_MAX_WIDTH)
+    local height = clamp(CCD.isResizingFrame.startHeight + (CCD.isResizingFrame.startCursorY - currentY), MAIN_FRAME_MIN_HEIGHT, MAIN_FRAME_MAX_HEIGHT)
+
+    CCD.frame:SetWidth(width)
+    CCD.frame:SetHeight(height)
+    updateRowWidths(width)
+  end)
 end
 
 local function createFrame()
@@ -2214,9 +2409,21 @@ local function createFrame()
   local frame = CreateFrame("Frame", "CraftCooldownsFrame", UIParent)
   CCD.frame = frame
 
-  frame:SetWidth(220)
-  frame:SetHeight(140)
+  frame:SetWidth(CCD.db.frame.width or MAIN_FRAME_MIN_WIDTH)
+  frame:SetHeight(CCD.db.frame.height or 140)
+  if frame.SetMinResize then
+    frame:SetMinResize(MAIN_FRAME_MIN_WIDTH, MAIN_FRAME_MIN_HEIGHT)
+  end
+  if frame.SetMaxResize then
+    frame:SetMaxResize(MAIN_FRAME_MAX_WIDTH, MAIN_FRAME_MAX_HEIGHT)
+  end
+  if frame.SetResizable then
+    frame:SetResizable(true)
+  end
   frame:SetClampedToScreen(true)
+  if frame.SetClipsChildren then
+    frame:SetClipsChildren(true)
+  end
   frame:SetMovable(true)
   frame:EnableMouse(true)
   frame:RegisterForDrag("LeftButton")
@@ -2229,6 +2436,9 @@ local function createFrame()
   frame:SetScript("OnDragStop", function()
     this:StopMovingOrSizing()
     saveFramePosition()
+  end)
+  frame:SetScript("OnSizeChanged", function()
+    updateRowWidths(this:GetWidth() or MAIN_FRAME_MIN_WIDTH)
   end)
   frame:SetBackdrop({
     bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
@@ -2284,6 +2494,49 @@ local function createFrame()
   end)
   optionsButton:SetScript("OnLeave", function()
     GameTooltip:Hide()
+  end)
+
+  local resizeButton = CreateFrame("Frame", nil, frame)
+  frame.resizeButton = resizeButton
+  resizeButton:SetWidth(20)
+  resizeButton:SetHeight(20)
+  resizeButton:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -3, 3)
+  resizeButton:SetFrameStrata("HIGH")
+  resizeButton:SetFrameLevel(frame:GetFrameLevel() + 5)
+  resizeButton:EnableMouse(true)
+  local resizeBg = resizeButton:CreateTexture(nil, "BACKGROUND")
+  resizeButton.bg = resizeBg
+  resizeBg:SetTexture("Interface\\Buttons\\WHITE8X8")
+  resizeBg:SetPoint("TOPLEFT", resizeButton, "TOPLEFT", 4, -4)
+  resizeBg:SetPoint("BOTTOMRIGHT", resizeButton, "BOTTOMRIGHT", -4, 4)
+  resizeBg:SetVertexColor(0.08, 0.08, 0.08, 0.45)
+  local resizeIcon = resizeButton:CreateTexture(nil, "ARTWORK")
+  resizeButton.icon = resizeIcon
+  resizeIcon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+  resizeIcon:SetAllPoints()
+  resizeIcon:SetVertexColor(0.9, 0.9, 0.9)
+  local resizeHighlight = resizeButton:CreateTexture(nil, "HIGHLIGHT")
+  resizeButton.highlight = resizeHighlight
+  resizeHighlight:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
+  resizeHighlight:SetAllPoints()
+  resizeHighlight:SetVertexColor(1.0, 1.0, 1.0)
+  resizeHighlight:SetBlendMode("ADD")
+  if resizeButton.SetHitRectInsets then
+    resizeButton:SetHitRectInsets(-4, -1, -1, -4)
+  end
+  resizeButton:SetScript("OnMouseDown", function()
+    if this.icon then
+      this.icon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
+      this.icon:SetVertexColor(1.0, 0.82, 0.0)
+    end
+    startFrameResize()
+  end)
+  resizeButton:SetScript("OnMouseUp", function()
+    if this.icon then
+      this.icon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+      this.icon:SetVertexColor(0.9, 0.9, 0.9)
+    end
+    stopFrameResize()
   end)
 
   local point = CCD.db.frame.point or "CENTER"

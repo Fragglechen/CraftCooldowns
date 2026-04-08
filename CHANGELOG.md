@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.3
+
+- Added support for resizing the cooldown window with a bottom-right resize grip
+- Saved manual cooldown window size per character
+- Added automatic fallback to content-based window sizing when more enabled recipes no longer fit
+- Improved ready notifications so linked cooldowns only trigger one sound and one combined message
+- Completed localization coverage for material availability lines and test-ready messages across Turtle WoW client languages
+- Improved visibility and behavior of the resize grip for Turtle/Vanilla clients
+
 ## 1.0.2
 
 - Fixed duplicate recipe entries that could appear during active cooldowns
