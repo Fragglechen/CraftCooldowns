@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.1
+
+- Added Gardening and Survival profession support
+- Added dynamic cooldown recipe discovery for Turtle professions
+- Added full options window with recipe visibility filters
+- Added minimap right-click and header gear button to open options
+- Added ready notifications with optional sound and center-screen message
+- Added test button and separate toggles for ready sound and ready message
+- Improved localization coverage for all supported Turtle WoW client languages
+- Improved options window sizing and layout behavior
+- Fixed multiple Turtle/Vanilla compatibility issues in the config UI
+- Hidden empty profession categories in the cooldown window
+
 ## 1.0.0
 
 - Initial public release

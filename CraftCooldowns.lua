@@ -24,8 +24,22 @@ local STRINGS = {
     no_professions = "No professions with known craft cooldowns found",
     craft_now = "Craft now",
     minimap_left_click = "Left-click: toggle window",
+    minimap_right_click = "Right-click: open options",
     minimap_drag = "Drag: move button",
     title = "Craft Cooldowns",
+    options_title = "Craft Cooldowns Options",
+    options_save = "Save",
+    options_show_minimap = "Show minimap button",
+    options_lock_frame = "Lock cooldown frame",
+    options_show_profession_headers = "Show profession headers",
+    options_ready_sound = "Play ready sound",
+    options_ready_message = "Show ready message",
+    options_recipe_list = "Cooldown recipes",
+    options_button_tooltip = "Open options",
+    no_enabled_recipe = "No enabled cooldown recipe selected",
+    no_config_recipes = "No learned cooldown recipes available yet.",
+    options_test = "Test",
+    ready_again = "%s is ready again",
   },
   deDE = {
     unknown = "Unbekannt",
@@ -45,8 +59,22 @@ local STRINGS = {
     no_professions = "Keine Berufe mit bekannten Craft-Cooldowns gefunden",
     craft_now = "Jetzt herstellen",
     minimap_left_click = "Linksklick: Fenster ein/aus",
+    minimap_right_click = "Rechtsklick: Optionen oeffnen",
     minimap_drag = "Ziehen: Button verschieben",
     title = "Craft Cooldowns",
+    options_title = "Craft Cooldowns Optionen",
+    options_save = "Speichern",
+    options_show_minimap = "Minimap-Button anzeigen",
+    options_lock_frame = "Cooldown-Fenster sperren",
+    options_show_profession_headers = "Berufskopfzeilen anzeigen",
+    options_ready_sound = "Ready-Sound abspielen",
+    options_ready_message = "Ready-Meldung anzeigen",
+    options_recipe_list = "Cooldown-Rezepte",
+    options_button_tooltip = "Optionen oeffnen",
+    no_enabled_recipe = "Kein aktiviertes Cooldown-Rezept ausgewaehlt",
+    no_config_recipes = "Noch keine gelernten Cooldown-Rezepte verfuegbar.",
+    options_test = "Test",
+    ready_again = "%s ist wieder bereit",
   },
   frFR = {
     unknown = "Inconnu",
@@ -66,8 +94,22 @@ local STRINGS = {
     no_professions = "Aucun metier avec des crafts a recharge connus n'a ete trouve",
     craft_now = "Fabriquer",
     minimap_left_click = "Clic gauche : afficher ou masquer la fenetre",
+    minimap_right_click = "Clic droit : ouvrir les options",
     minimap_drag = "Glisser : deplacer le bouton",
     title = "Craft Cooldowns",
+    options_title = "Options Craft Cooldowns",
+    options_save = "Enregistrer",
+    options_show_minimap = "Afficher le bouton de la minicarte",
+    options_lock_frame = "Verrouiller la fenetre des cooldowns",
+    options_show_profession_headers = "Afficher les en-tetes de metier",
+    options_ready_sound = "Jouer le son de disponibilite",
+    options_ready_message = "Afficher le message de disponibilite",
+    options_recipe_list = "Recettes a cooldown",
+    options_button_tooltip = "Ouvrir les options",
+    no_enabled_recipe = "Aucune recette a cooldown activee",
+    no_config_recipes = "Aucune recette a cooldown apprise disponible.",
+    options_test = "Test",
+    ready_again = "%s est de nouveau disponible",
   },
   esES = {
     unknown = "Desconocido",
@@ -87,8 +129,22 @@ local STRINGS = {
     no_professions = "No se encontraron profesiones con cooldowns conocidos",
     craft_now = "Fabricar ahora",
     minimap_left_click = "Clic izquierdo: mostrar u ocultar ventana",
+    minimap_right_click = "Clic derecho: abrir opciones",
     minimap_drag = "Arrastrar: mover boton",
     title = "Craft Cooldowns",
+    options_title = "Opciones de Craft Cooldowns",
+    options_save = "Guardar",
+    options_show_minimap = "Mostrar boton del minimapa",
+    options_lock_frame = "Bloquear ventana de cooldowns",
+    options_show_profession_headers = "Mostrar encabezados de profesion",
+    options_ready_sound = "Reproducir sonido de listo",
+    options_ready_message = "Mostrar mensaje de listo",
+    options_recipe_list = "Recetas con cooldown",
+    options_button_tooltip = "Abrir opciones",
+    no_enabled_recipe = "No hay ninguna receta con cooldown activada",
+    no_config_recipes = "Aun no hay recetas con cooldown aprendidas.",
+    options_test = "Probar",
+    ready_again = "%s vuelve a estar disponible",
   },
   ruRU = {
     unknown = "Neizvestno",
@@ -108,8 +164,22 @@ local STRINGS = {
     no_professions = "Ne naydeno professiy s izvestnymi kuldaunami krafta",
     craft_now = "Sozdat",
     minimap_left_click = "Levyy klik: pokazat ili skryt okno",
+    minimap_right_click = "Pravyy klik: otkryt nastroiki",
     minimap_drag = "Peretashchit: peremestit knopku",
     title = "Craft Cooldowns",
+    options_title = "Nastroiki Craft Cooldowns",
+    options_save = "Sohranit",
+    options_show_minimap = "Pokazyvat knopku u minimapy",
+    options_lock_frame = "Zablokirovat okno kuldaunov",
+    options_show_profession_headers = "Pokazyvat zagolovki professiy",
+    options_ready_sound = "Proigryvat zvuk gotovnosti",
+    options_ready_message = "Pokazyvat soobshchenie o gotovnosti",
+    options_recipe_list = "Retsepty s kuldaunom",
+    options_button_tooltip = "Otkryt nastroiki",
+    no_enabled_recipe = "Net vklyuchennyh retseptov s kuldaunom",
+    no_config_recipes = "Net dostupnyh izuchennyh retseptov s kuldaunom.",
+    options_test = "Test",
+    ready_again = "%s snova gotov",
   },
   zhCN = {
     unknown = "Unknown",
@@ -129,8 +199,22 @@ local STRINGS = {
     no_professions = "No professions with known craft cooldowns found",
     craft_now = "Craft now",
     minimap_left_click = "Left-click: toggle window",
+    minimap_right_click = "Right-click: open options",
     minimap_drag = "Drag: move button",
     title = "Craft Cooldowns",
+    options_title = "Craft Cooldowns Options",
+    options_save = "Save",
+    options_show_minimap = "Show minimap button",
+    options_lock_frame = "Lock cooldown frame",
+    options_show_profession_headers = "Show profession headers",
+    options_ready_sound = "Play ready sound",
+    options_ready_message = "Show ready message",
+    options_recipe_list = "Cooldown recipes",
+    options_button_tooltip = "Open options",
+    no_enabled_recipe = "No enabled cooldown recipe selected",
+    no_config_recipes = "No learned cooldown recipes available yet.",
+    options_test = "Test",
+    ready_again = "%s is ready again",
   },
   koKR = {
     unknown = "Unknown",
@@ -150,8 +234,22 @@ local STRINGS = {
     no_professions = "No professions with known craft cooldowns found",
     craft_now = "Craft now",
     minimap_left_click = "Left-click: toggle window",
+    minimap_right_click = "Right-click: open options",
     minimap_drag = "Drag: move button",
     title = "Craft Cooldowns",
+    options_title = "Craft Cooldowns Options",
+    options_save = "Save",
+    options_show_minimap = "Show minimap button",
+    options_lock_frame = "Lock cooldown frame",
+    options_show_profession_headers = "Show profession headers",
+    options_ready_sound = "Play ready sound",
+    options_ready_message = "Show ready message",
+    options_recipe_list = "Cooldown recipes",
+    options_button_tooltip = "Open options",
+    no_enabled_recipe = "No enabled cooldown recipe selected",
+    no_config_recipes = "No learned cooldown recipes available yet.",
+    options_test = "Test",
+    ready_again = "%s is ready again",
   },
   zhTW = {
     unknown = "Unknown",
@@ -171,12 +269,30 @@ local STRINGS = {
     no_professions = "No professions with known craft cooldowns found",
     craft_now = "Craft now",
     minimap_left_click = "Left-click: toggle window",
+    minimap_right_click = "Right-click: open options",
     minimap_drag = "Drag: move button",
     title = "Craft Cooldowns",
+    options_title = "Craft Cooldowns Options",
+    options_save = "Save",
+    options_show_minimap = "Show minimap button",
+    options_lock_frame = "Lock cooldown frame",
+    options_show_profession_headers = "Show profession headers",
+    options_ready_sound = "Play ready sound",
+    options_ready_message = "Show ready message",
+    options_recipe_list = "Cooldown recipes",
+    options_button_tooltip = "Open options",
+    no_enabled_recipe = "No enabled cooldown recipe selected",
+    no_config_recipes = "No learned cooldown recipes available yet.",
+    options_test = "Test",
+    ready_again = "%s is ready again",
   },
 }
 
 local L = STRINGS[locale] or STRINGS.enUS
+
+local function T(key)
+  return L[key] or STRINGS.enUS[key] or key
+end
 
 local LOCALIZED_PROFESSIONS = {
   Alchemy = {
@@ -279,6 +395,9 @@ local isVisible
 local resetATSWState
 local executeTradeSkillCraft
 local executeCraftCraft
+local refreshFrame
+local updateMinimapButtonVisibility
+local openConfigFrame
 
 local function lowercase(value)
   if not value then
@@ -380,6 +499,28 @@ end
 local function notifyMessage(msg, r, g, b)
   printMessage(msg)
   printCombatMessage(msg, r, g, b)
+end
+
+local function showCenterMessage(msg)
+  if RaidWarningFrame and RaidWarningFrame.AddMessage then
+    RaidWarningFrame:AddMessage(tostring(msg), 1.0, 0.82, 0.0)
+    return
+  end
+
+  printCombatMessage(msg, 1.0, 0.82, 0.0)
+end
+
+local function playReadySound()
+  if PlaySound then
+    PlaySound("RaidWarning")
+    return true
+  end
+
+  if PlaySoundFile then
+    return pcall(PlaySoundFile, "Interface\\AddOns\\BigWigs\\Sounds\\Beware.wav")
+  end
+
+  return nil
 end
 
 local function getItemIdFromLink(link)
@@ -506,16 +647,40 @@ local function initializeDatabase()
 
   CCD.db = CraftCooldownsDB.characters[charKey]
   CCD.db.frame = CCD.db.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0 }
+  CCD.db.configFrame = CCD.db.configFrame or { point = "CENTER", relativePoint = "CENTER", x = 20, y = -20 }
   CCD.db.minimap = CCD.db.minimap or { angle = 45 }
   CCD.db.recipes = CCD.db.recipes or {}
+  CCD.db.recipeFilters = CCD.db.recipeFilters or {}
   CCD.db.dynamicRecipes = CCD.db.dynamicRecipes or {}
   CCD.db.professions = CCD.db.professions or {}
   CCD.db.scanned = CCD.db.scanned or {}
   CCD.db.bank = CCD.db.bank or { counts = {}, lastUpdate = 0 }
+  CCD.db.options = CCD.db.options or {}
+  CCD.db.readyState = CCD.db.readyState or {}
   CCD.db.visible = CCD.db.visible
 
   if CCD.db.visible == nil then
     CCD.db.visible = true
+  end
+
+  if CCD.db.options.showMinimapButton == nil then
+    CCD.db.options.showMinimapButton = true
+  end
+
+  if CCD.db.options.lockFrame == nil then
+    CCD.db.options.lockFrame = false
+  end
+
+  if CCD.db.options.showProfessionHeaders == nil then
+    CCD.db.options.showProfessionHeaders = true
+  end
+
+  if CCD.db.options.readySound == nil then
+    CCD.db.options.readySound = true
+  end
+
+  if CCD.db.options.readyMessage == nil then
+    CCD.db.options.readyMessage = true
   end
 
   for professionKey, recipes in pairs(CCD.db.dynamicRecipes) do
@@ -539,6 +704,105 @@ local function getRecipesForProfession(professionKey)
   end
 
   return recipes
+end
+
+local function getAllKnownCooldownRecipes()
+  local recipes = {}
+
+  for _, professionKey in ipairs(PROFESSIONS_WITH_COOLDOWNS) do
+    for _, recipeDef in ipairs(getRecipesForProfession(professionKey)) do
+      table.insert(recipes, recipeDef)
+    end
+  end
+
+  table.sort(recipes, function(a, b)
+    if a.profession ~= b.profession then
+      return getProfessionDisplayName(a.profession) < getProfessionDisplayName(b.profession)
+    end
+
+    return getRecipeDisplayName(a) < getRecipeDisplayName(b)
+  end)
+
+  return recipes
+end
+
+local function getConfigurableRecipes()
+  local recipes = {}
+
+  for _, professionKey in ipairs(PROFESSIONS_WITH_COOLDOWNS) do
+    if CCD.db.professions[professionKey] then
+      for _, recipeDef in ipairs(getRecipesForProfession(professionKey)) do
+        local recipeState = CCD.db.recipes[recipeDef.id]
+        if recipeState and recipeState.learned then
+          table.insert(recipes, recipeDef)
+        end
+      end
+    end
+  end
+
+  table.sort(recipes, function(a, b)
+    if a.profession ~= b.profession then
+      return getProfessionDisplayName(a.profession) < getProfessionDisplayName(b.profession)
+    end
+
+    return getRecipeDisplayName(a) < getRecipeDisplayName(b)
+  end)
+
+  return recipes
+end
+
+local function isRecipeEnabled(recipeId)
+  if not CCD.db or not CCD.db.recipeFilters then
+    return true
+  end
+
+  local value = CCD.db.recipeFilters[recipeId]
+  if value == nil then
+    return true
+  end
+
+  return value and true or nil
+end
+
+local function triggerReadyNotification(recipeDef)
+  local recipeName = getRecipeDisplayName(recipeDef)
+  local message = string.format(T("ready_again"), recipeName)
+
+  if CCD.db.options.readySound then
+    playReadySound()
+  end
+
+  if CCD.db.options.readyMessage then
+    showCenterMessage(message)
+    printMessage(message)
+  end
+end
+
+local function updateReadyNotifications()
+  if not CCD.db or not CCD.db.recipes then
+    return
+  end
+
+  local now = time()
+  for recipeId, recipeState in pairs(CCD.db.recipes) do
+    local recipeDef = RECIPE_BY_ID[recipeId]
+    if recipeDef and recipeState and recipeState.learned then
+      CCD.db.readyState[recipeId] = CCD.db.readyState[recipeId] or {}
+      local readyState = CCD.db.readyState[recipeId]
+      local isOnCooldown = recipeState.expiresAt and recipeState.expiresAt > now
+
+      if readyState.wasOnCooldown == nil then
+        readyState.wasOnCooldown = isOnCooldown and true or false
+      elseif readyState.wasOnCooldown and not isOnCooldown then
+        readyState.wasOnCooldown = false
+        if isRecipeEnabled(recipeId) then
+          triggerReadyNotification(recipeDef)
+        end
+      else
+        readyState.wasOnCooldown = isOnCooldown and true or false
+      end
+    end
+  end
 end
 
 local function makeDynamicRecipeId(professionKey, recipeName)
@@ -1413,47 +1677,47 @@ local function buildEntries()
 
   for _, professionKey in ipairs(PROFESSIONS_WITH_COOLDOWNS) do
     if CCD.db.professions[professionKey] then
-      hasAnyProfession = true
-      table.insert(entries, {
-        label = getProfessionDisplayName(professionKey),
-        status = "",
-        isHeader = true,
-      })
-
       if not CCD.db.scanned[professionKey] then
-        table.insert(entries, {
-          label = L.open_profession_once,
-          status = "",
-          isHint = true,
-        })
+        -- Do not show empty profession categories before any cooldown recipe was found.
       else
         local learnedAny = nil
+        local visibleEntries = {}
+
         for _, recipeDef in ipairs(getRecipesForProfession(professionKey)) do
           local recipeState = CCD.db.recipes[recipeDef.id]
           if recipeState and recipeState.learned then
             learnedAny = true
+            if isRecipeEnabled(recipeDef.id) then
+              local remaining = 0
+              if recipeState.expiresAt and recipeState.expiresAt > time() then
+                remaining = recipeState.expiresAt - time()
+              end
 
-            local remaining = 0
-            if recipeState.expiresAt and recipeState.expiresAt > time() then
-              remaining = recipeState.expiresAt - time()
+              table.insert(visibleEntries, {
+                label = "  " .. getRecipeDisplayName(recipeDef),
+                status = remaining > 0 and formatDuration(remaining) or L.ready,
+                isReady = remaining <= 0,
+                isCooldown = remaining > 0,
+                recipeId = recipeDef.id,
+              })
             end
-
-            table.insert(entries, {
-              label = "  " .. getRecipeDisplayName(recipeDef),
-              status = remaining > 0 and formatDuration(remaining) or L.ready,
-              isReady = remaining <= 0,
-              isCooldown = remaining > 0,
-              recipeId = recipeDef.id,
-            })
           end
         end
 
-        if not learnedAny then
-          table.insert(entries, {
-            label = L.no_learned_recipe,
-            status = "",
-            isHint = true,
-          })
+        if table.getn(visibleEntries) > 0 then
+          hasAnyProfession = true
+
+          if CCD.db.options.showProfessionHeaders then
+            table.insert(entries, {
+              label = getProfessionDisplayName(professionKey),
+              status = "",
+              isHeader = true,
+            })
+          end
+
+          for _, entry in ipairs(visibleEntries) do
+            table.insert(entries, entry)
+          end
         end
       end
     end
@@ -1541,7 +1805,321 @@ local function updateFrameWidth(entries)
   end
 end
 
-local function refreshFrame()
+local function saveConfigFramePosition()
+  if not CCD.configFrame then
+    return
+  end
+
+  local point, _, relativePoint, xOfs, yOfs = CCD.configFrame:GetPoint()
+  CCD.db.configFrame.point = point
+  CCD.db.configFrame.relativePoint = relativePoint
+  CCD.db.configFrame.x = xOfs
+  CCD.db.configFrame.y = yOfs
+end
+
+local function applyFrameLockState()
+  if not CCD.frame then
+    return
+  end
+
+  CCD.frame:SetMovable(not CCD.db.options.lockFrame)
+  CCD.frame:RegisterForDrag("LeftButton")
+end
+
+local function updateConfigFrameLayout()
+  if not CCD.configFrame then
+    return
+  end
+
+  local total = table.getn(CCD.configRecipeList or {})
+  local visibleRows = math.min(math.max(total, 1), 12)
+  local listHeight = math.max(38, 10 + (visibleRows * 20))
+  local frameHeight = 296 + listHeight
+
+  CCD.configFrame.listBg:SetHeight(listHeight)
+  CCD.configFrame.testButton:ClearAllPoints()
+  CCD.configFrame.testButton:SetPoint("BOTTOM", CCD.configFrame, "BOTTOM", 0, 44)
+  CCD.configFrame.saveButton:ClearAllPoints()
+  CCD.configFrame.saveButton:SetPoint("BOTTOM", CCD.configFrame, "BOTTOM", 0, 16)
+  CCD.configFrame:SetHeight(frameHeight)
+end
+
+local function updateConfigRecipeList()
+  if not CCD.configFrame or not CCD.configFrame:IsShown() then
+    return
+  end
+
+  CCD.configRecipeList = getConfigurableRecipes()
+  updateConfigFrameLayout()
+  if table.getn(CCD.configRecipeList) == 0 then
+    CCD.configFrame.emptyText:Show()
+  else
+    CCD.configFrame.emptyText:Hide()
+  end
+
+  local rows = CCD.configRows or {}
+  local total = table.getn(CCD.configRecipeList)
+  local visible = table.getn(rows)
+  local offset = 0
+
+  if total > visible then
+    CCD.configScroll:Show()
+  else
+    CCD.configScroll:Hide()
+  end
+
+  if FauxScrollFrame_GetOffset then
+    FauxScrollFrame_Update(CCD.configScroll, total, visible, 18)
+    offset = FauxScrollFrame_GetOffset(CCD.configScroll)
+  end
+
+  for index, row in ipairs(rows) do
+    local recipeDef = CCD.configRecipeList[index + offset]
+    if recipeDef then
+      local recipeName = getRecipeDisplayName(recipeDef)
+      local professionName = getProfessionDisplayName(recipeDef.profession)
+      row.recipeId = recipeDef.id
+      row.label:SetText(professionName .. ": " .. recipeName)
+      row.check:SetChecked(CCD.pendingRecipeFilters[recipeDef.id] and 1 or nil)
+      row:Show()
+    else
+      row.recipeId = nil
+      row.label:SetText("")
+      row.check:SetChecked(nil)
+      row:Hide()
+    end
+  end
+end
+
+local function refreshConfigFrame()
+  if not CCD.configFrame then
+    return
+  end
+
+  CCD.pendingOptions = CCD.pendingOptions or {}
+  CCD.pendingRecipeFilters = CCD.pendingRecipeFilters or {}
+
+  CCD.configFrame.showMinimap:SetChecked(CCD.pendingOptions.showMinimapButton and 1 or nil)
+  CCD.configFrame.lockFrame:SetChecked(CCD.pendingOptions.lockFrame and 1 or nil)
+  CCD.configFrame.showHeaders:SetChecked(CCD.pendingOptions.showProfessionHeaders and 1 or nil)
+  CCD.configFrame.readySound:SetChecked(CCD.pendingOptions.readySound and 1 or nil)
+  CCD.configFrame.readyMessage:SetChecked(CCD.pendingOptions.readyMessage and 1 or nil)
+  updateConfigRecipeList()
+end
+
+local function saveConfig()
+  CCD.db.options.showMinimapButton = CCD.pendingOptions.showMinimapButton and true or false
+  CCD.db.options.lockFrame = CCD.pendingOptions.lockFrame and true or false
+  CCD.db.options.showProfessionHeaders = CCD.pendingOptions.showProfessionHeaders and true or false
+  CCD.db.options.readySound = CCD.pendingOptions.readySound and true or false
+  CCD.db.options.readyMessage = CCD.pendingOptions.readyMessage and true or false
+
+  CCD.db.recipeFilters = CCD.db.recipeFilters or {}
+  for recipeId, value in pairs(CCD.pendingRecipeFilters or {}) do
+    CCD.db.recipeFilters[recipeId] = value and true or false
+  end
+
+  updateMinimapButtonVisibility()
+  applyFrameLockState()
+  refreshFrame()
+  if CCD.configFrame then
+    CCD.configFrame:Hide()
+  end
+end
+
+local function createConfigFrame()
+  if CCD.configFrame then
+    return
+  end
+
+  local frame = CreateFrame("Frame", "CraftCooldownsConfigFrame", UIParent)
+  CCD.configFrame = frame
+
+  frame:SetWidth(420)
+  frame:SetHeight(230)
+  frame:SetFrameStrata("DIALOG")
+  frame:SetToplevel(true)
+  frame:SetClampedToScreen(true)
+  frame:SetMovable(true)
+  frame:EnableMouse(true)
+  frame:RegisterForDrag("LeftButton")
+  frame:SetScript("OnDragStart", function()
+    this:StartMoving()
+  end)
+  frame:SetScript("OnDragStop", function()
+    this:StopMovingOrSizing()
+    saveConfigFramePosition()
+  end)
+  frame:SetBackdrop({
+    bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    tile = true,
+    tileSize = 16,
+    edgeSize = 16,
+    insets = { left = 4, right = 4, top = 4, bottom = 4 },
+  })
+  frame:SetBackdropColor(0.05, 0.05, 0.05, 0.95)
+  frame:SetBackdropBorderColor(0.7, 0.7, 0.7, 1.0)
+  frame:Hide()
+  if UISpecialFrames then
+    table.insert(UISpecialFrames, "CraftCooldownsConfigFrame")
+  end
+
+  local title = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+  title:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -10)
+  title:SetText(T("options_title"))
+
+  local closeButton = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+  closeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -4, -4)
+  closeButton:SetScript("OnClick", function()
+    frame:Hide()
+  end)
+
+  frame.showMinimap = CreateFrame("CheckButton", "CraftCooldownsConfigShowMinimap", frame, "UICheckButtonTemplate")
+  frame.showMinimap:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -34)
+  getglobal(frame.showMinimap:GetName() .. "Text"):SetText(T("options_show_minimap"))
+  frame.showMinimap:SetScript("OnClick", function()
+    CCD.pendingOptions.showMinimapButton = this:GetChecked() and true or false
+  end)
+
+  frame.lockFrame = CreateFrame("CheckButton", "CraftCooldownsConfigLockFrame", frame, "UICheckButtonTemplate")
+  frame.lockFrame:SetPoint("TOPLEFT", frame.showMinimap, "BOTTOMLEFT", 0, -4)
+  getglobal(frame.lockFrame:GetName() .. "Text"):SetText(T("options_lock_frame"))
+  frame.lockFrame:SetScript("OnClick", function()
+    CCD.pendingOptions.lockFrame = this:GetChecked() and true or false
+  end)
+
+  frame.showHeaders = CreateFrame("CheckButton", "CraftCooldownsConfigShowHeaders", frame, "UICheckButtonTemplate")
+  frame.showHeaders:SetPoint("TOPLEFT", frame.lockFrame, "BOTTOMLEFT", 0, -4)
+  getglobal(frame.showHeaders:GetName() .. "Text"):SetText(T("options_show_profession_headers"))
+  frame.showHeaders:SetScript("OnClick", function()
+    CCD.pendingOptions.showProfessionHeaders = this:GetChecked() and true or false
+  end)
+
+  frame.readySound = CreateFrame("CheckButton", "CraftCooldownsConfigReadySound", frame, "UICheckButtonTemplate")
+  frame.readySound:SetPoint("TOPLEFT", frame.showHeaders, "BOTTOMLEFT", 0, -4)
+  getglobal(frame.readySound:GetName() .. "Text"):SetText(T("options_ready_sound"))
+  frame.readySound:SetScript("OnClick", function()
+    CCD.pendingOptions.readySound = this:GetChecked() and true or false
+  end)
+
+  frame.readyMessage = CreateFrame("CheckButton", "CraftCooldownsConfigReadyMessage", frame, "UICheckButtonTemplate")
+  frame.readyMessage:SetPoint("LEFT", frame.readySound, "RIGHT", 150, 0)
+  getglobal(frame.readyMessage:GetName() .. "Text"):SetText(T("options_ready_message"))
+  frame.readyMessage:SetScript("OnClick", function()
+    CCD.pendingOptions.readyMessage = this:GetChecked() and true or false
+  end)
+
+  local listLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  listLabel:SetPoint("TOPLEFT", frame.readySound, "BOTTOMLEFT", 4, -38)
+  listLabel:SetText(T("options_recipe_list"))
+
+  local listBg = CreateFrame("Frame", nil, frame)
+  frame.listBg = listBg
+  listBg:SetPoint("TOPLEFT", listLabel, "BOTTOMLEFT", -2, -6)
+  listBg:SetWidth(384)
+  listBg:SetHeight(60)
+  listBg:SetBackdrop({
+    bgFile = "Interface\\Buttons\\WHITE8X8",
+    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    tile = true,
+    tileSize = 8,
+    edgeSize = 12,
+    insets = { left = 2, right = 2, top = 2, bottom = 2 },
+  })
+  listBg:SetBackdropColor(0.03, 0.03, 0.03, 0.85)
+  listBg:SetBackdropBorderColor(0.4, 0.4, 0.4, 1.0)
+
+  local emptyText = listBg:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+  frame.emptyText = emptyText
+  emptyText:SetPoint("CENTER", listBg, "CENTER", 0, 0)
+  emptyText:SetText(T("no_config_recipes"))
+  emptyText:Hide()
+
+  local scroll = CreateFrame("ScrollFrame", "CraftCooldownsConfigScroll", frame, "FauxScrollFrameTemplate")
+  frame.scroll = scroll
+  CCD.configScroll = scroll
+  scroll:SetPoint("TOPLEFT", listBg, "TOPLEFT", 0, -4)
+  scroll:SetPoint("BOTTOMRIGHT", listBg, "BOTTOMRIGHT", -24, 4)
+  scroll:SetScript("OnVerticalScroll", function()
+    FauxScrollFrame_OnVerticalScroll(18, updateConfigRecipeList)
+  end)
+
+  CCD.configRows = CCD.configRows or {}
+  for index = 1, 12 do
+    local row = CreateFrame("Frame", "CraftCooldownsConfigRecipeRow" .. index, listBg)
+    row:SetWidth(348)
+    row:SetHeight(18)
+    row:SetPoint("TOPLEFT", listBg, "TOPLEFT", 8, -8 - ((index - 1) * 20))
+    row.check = CreateFrame("CheckButton", nil, row, "UICheckButtonTemplate")
+    row.check:SetWidth(24)
+    row.check:SetHeight(24)
+    row.check:SetPoint("LEFT", row, "LEFT", 0, 0)
+    row.label = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.label:SetPoint("LEFT", row.check, "RIGHT", 2, 0)
+    row.label:SetWidth(314)
+    row.label:SetJustifyH("LEFT")
+    row.label:SetText("")
+    row.check:SetScript("OnClick", function()
+      local parent = this:GetParent()
+      if parent and parent.recipeId then
+        CCD.pendingRecipeFilters[parent.recipeId] = this:GetChecked() and true or false
+      end
+    end)
+    row:Hide()
+    table.insert(CCD.configRows, row)
+  end
+
+  local saveButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+  frame.saveButton = saveButton
+  saveButton:SetWidth(100)
+  saveButton:SetHeight(22)
+  saveButton:SetText(T("options_save"))
+  saveButton:SetScript("OnClick", function()
+    saveConfig()
+  end)
+
+  local testButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+  frame.testButton = testButton
+  testButton:SetWidth(100)
+  testButton:SetHeight(22)
+  testButton:SetText(T("options_test"))
+  testButton:SetScript("OnClick", function()
+    if CCD.pendingOptions.readySound then
+      playReadySound()
+    end
+    if CCD.pendingOptions.readyMessage then
+      showCenterMessage(string.format(T("ready_again"), "Mooncloth"))
+    end
+  end)
+
+  local point = CCD.db.configFrame.point or "CENTER"
+  local relativePoint = CCD.db.configFrame.relativePoint or "CENTER"
+  local x = CCD.db.configFrame.x or 20
+  local y = CCD.db.configFrame.y or -20
+  frame:SetPoint(point, UIParent, relativePoint, x, y)
+  updateConfigFrameLayout()
+end
+
+openConfigFrame = function()
+  createConfigFrame()
+  CCD.pendingOptions = {
+    showMinimapButton = CCD.db.options.showMinimapButton and true or false,
+    lockFrame = CCD.db.options.lockFrame and true or false,
+    showProfessionHeaders = CCD.db.options.showProfessionHeaders and true or false,
+    readySound = CCD.db.options.readySound and true or false,
+    readyMessage = CCD.db.options.readyMessage and true or false,
+  }
+  CCD.pendingRecipeFilters = {}
+  for _, recipeDef in ipairs(getConfigurableRecipes()) do
+    CCD.pendingRecipeFilters[recipeDef.id] = isRecipeEnabled(recipeDef.id) and true or false
+  end
+  CCD.configFrame:Show()
+  CCD.configFrame:Raise()
+  refreshConfigFrame()
+end
+
+refreshFrame = function()
   if not CCD.frame then
     return
   end
@@ -1604,6 +2182,9 @@ local function createFrame()
   frame:EnableMouse(true)
   frame:RegisterForDrag("LeftButton")
   frame:SetScript("OnDragStart", function()
+    if CCD.db.options.lockFrame then
+      return
+    end
     this:StartMoving()
   end)
   frame:SetScript("OnDragStop", function()
@@ -1635,6 +2216,37 @@ local function createFrame()
     CCD.db.visible = false
   end)
 
+  local optionsButton = CreateFrame("Button", nil, frame)
+  frame.optionsButton = optionsButton
+  optionsButton:SetWidth(18)
+  optionsButton:SetHeight(18)
+  optionsButton:SetPoint("RIGHT", closeButton, "LEFT", 2, 0)
+  optionsButton:SetNormalTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Up")
+  optionsButton:SetPushedTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Down")
+  optionsButton:SetHighlightTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight")
+  optionsButton:GetNormalTexture():SetTexCoord(0.16, 0.84, 0.17, 0.83)
+  optionsButton:GetPushedTexture():SetTexCoord(0.16, 0.84, 0.17, 0.83)
+  optionsButton:GetHighlightTexture():SetTexCoord(0.16, 0.84, 0.17, 0.83)
+  local optionsIcon = optionsButton:CreateTexture(nil, "ARTWORK")
+  optionsButton.icon = optionsIcon
+  optionsIcon:SetTexture("Interface\\Icons\\INV_Gizmo_02")
+  optionsIcon:SetWidth(9)
+  optionsIcon:SetHeight(9)
+  optionsIcon:SetPoint("CENTER", optionsButton, "CENTER", 0, 0)
+  optionsIcon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
+  optionsIcon:SetVertexColor(1, 1, 1)
+  optionsButton:SetScript("OnClick", function()
+    openConfigFrame()
+  end)
+  optionsButton:SetScript("OnEnter", function()
+    GameTooltip:SetOwner(this, "ANCHOR_LEFT")
+    GameTooltip:AddLine(T("options_button_tooltip"))
+    GameTooltip:Show()
+  end)
+  optionsButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+  end)
+
   local point = CCD.db.frame.point or "CENTER"
   local relativePoint = CCD.db.frame.relativePoint or "CENTER"
   local x = CCD.db.frame.x or 0
@@ -1646,6 +2258,8 @@ local function createFrame()
   else
     frame:Hide()
   end
+
+  applyFrameLockState()
 end
 
 local function toggleFrame()
@@ -1683,6 +2297,19 @@ local function updateMinimapButtonPosition()
   CCD.minimapButton:SetPoint("CENTER", Minimap, "CENTER", x, y)
 end
 
+updateMinimapButtonVisibility = function()
+  if not CCD.minimapButton then
+    return
+  end
+
+  if CCD.db.options.showMinimapButton then
+    CCD.minimapButton:Show()
+    updateMinimapButtonPosition()
+  else
+    CCD.minimapButton:Hide()
+  end
+end
+
 local function createMinimapButton()
   if CCD.minimapButton or not Minimap then
     return
@@ -1697,6 +2324,7 @@ local function createMinimapButton()
   button:SetMovable(true)
   button:EnableMouse(true)
   button:RegisterForDrag("LeftButton")
+  button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
   local border = button:CreateTexture(nil, "OVERLAY")
   button.border = border
@@ -1722,7 +2350,11 @@ local function createMinimapButton()
   icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
 
   button:SetScript("OnClick", function()
-    toggleFrame()
+    if arg1 == "RightButton" then
+      openConfigFrame()
+    else
+      toggleFrame()
+    end
   end)
 
   button:SetScript("OnDragStart", function()
@@ -1753,6 +2385,7 @@ local function createMinimapButton()
     GameTooltip:SetOwner(this, "ANCHOR_LEFT")
     GameTooltip:AddLine(L.title)
     GameTooltip:AddLine(L.minimap_left_click, 1, 1, 1)
+    GameTooltip:AddLine(T("minimap_right_click"), 1, 1, 1)
     GameTooltip:AddLine(L.minimap_drag, 0.7, 0.7, 0.7)
     GameTooltip:Show()
   end)
@@ -1761,7 +2394,7 @@ local function createMinimapButton()
     GameTooltip:Hide()
   end)
 
-  updateMinimapButtonPosition()
+  updateMinimapButtonVisibility()
 end
 
 SLASH_CRAFTCOOLDOWNS1 = "/craftcd"
@@ -1779,6 +2412,11 @@ SlashCmdList.CRAFTCOOLDOWNS = function(msg)
     scanTradeSkillFrame()
     scanCraftFrame()
     refreshFrame()
+    return
+  end
+
+  if msg == "config" or msg == "options" then
+    openConfigFrame()
     return
   end
 
@@ -1804,6 +2442,7 @@ CCD:SetScript("OnUpdate", function()
 
   if CCD.updateElapsed >= 1 then
     CCD.updateElapsed = 0
+    updateReadyNotifications()
     refreshFrame()
   end
 end)
@@ -1814,10 +2453,12 @@ CCD:SetScript("OnEvent", function()
     updateProfessionList()
     createFrame()
     createMinimapButton()
+    updateMinimapButtonVisibility()
     refreshFrame()
   elseif event == "PLAYER_LOGIN" then
     updateProfessionList()
     updateMinimapButtonPosition()
+    updateMinimapButtonVisibility()
     refreshFrame()
   elseif event == "SKILL_LINES_CHANGED" then
     updateProfessionList()
