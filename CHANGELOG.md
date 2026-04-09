@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.5
+
+- Reworked the multi-character cooldown view into a combined recipe list with a character column
+- Added recipe sorting by recipe name, character, ready first, and longest remaining first
+- Kept quick-craft actions limited to ready recipes owned by the current character
+- Improved automatic cooldown window width for long recipe names
+- Reworked config character selection to support per-character recipe filters with pending changes until save
+- Fixed multiple Turtle/Vanilla Lua scope issues in the character selection flow
+
 ## 1.0.4
 
 - Added account-wide character cooldown aggregation with optional other-character tabs

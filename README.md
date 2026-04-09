@@ -45,7 +45,7 @@ Use the release build script to prepare a clean release folder and zip:
 powershell -ExecutionPolicy Bypass -File .\scripts\Build-Release.ps1
 ```
 
-The script creates `_release\CraftCooldowns` and `_release\CraftCooldowns-1.0.4.zip`.
+The script creates `_release\CraftCooldowns` and `_release\CraftCooldowns-1.0.5.zip`.
 
 ## License
 
