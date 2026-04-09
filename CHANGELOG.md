@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.4
+
+- Added account-wide character cooldown aggregation with optional other-character tabs
+- Added character visibility filters and tab sorting options in the config window
+- Improved cooldown window tab styling and stabilized width across tab switches
+- Fixed character list issues caused by per-character saved variable migration
+- Fixed Blizzard tab template errors and reduced delay when switching character tabs
+- Reworked multiple config layout issues and improved options window behavior
+
 ## 1.0.3
 
 - Added support for resizing the cooldown window with a bottom-right resize grip

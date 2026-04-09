@@ -38,14 +38,25 @@ local STRINGS = {
     options_show_profession_headers = "Show profession headers",
     options_ready_sound = "Play ready sound",
     options_ready_message = "Show ready message",
+    options_show_all_characters = "Show all characters",
+    options_character_list = "Characters",
+    options_all = "All",
+    options_none = "None",
     options_recipe_list = "Cooldown recipes",
     options_button_tooltip = "Open options",
+    options_tab_sort = "Tab sort",
+    sort_name = "Name",
+    sort_updated = "Updated",
+    sort_realm = "Realm",
     no_enabled_recipe = "No enabled cooldown recipe selected",
     no_config_recipes = "No learned cooldown recipes available yet.",
+    no_character_data = "No data yet. Log in with this character first.",
+    last_updated = "Last updated: %s",
+    last_updated_never = "Last updated: no data yet",
     options_test = "Test",
     ready_again = "%s is ready again",
     ready_multiple = "Ready again: %s",
-    test_recipe_name = "Mooncloth",
+    test_recipe_name = "Test Material",
   },
   deDE = {
     unknown = "Unbekannt",
@@ -79,14 +90,25 @@ local STRINGS = {
     options_show_profession_headers = "Berufskopfzeilen anzeigen",
     options_ready_sound = "Ready-Sound abspielen",
     options_ready_message = "Ready-Meldung anzeigen",
+    options_show_all_characters = "Alle Charaktere anzeigen",
+    options_character_list = "Charaktere",
+    options_all = "Alle",
+    options_none = "Keiner",
     options_recipe_list = "Cooldown-Rezepte",
     options_button_tooltip = "Optionen oeffnen",
+    options_tab_sort = "Tab-Sortierung",
+    sort_name = "Name",
+    sort_updated = "Aktualisiert",
+    sort_realm = "Realm",
     no_enabled_recipe = "Kein aktiviertes Cooldown-Rezept ausgewaehlt",
     no_config_recipes = "Noch keine gelernten Cooldown-Rezepte verfuegbar.",
+    no_character_data = "Noch keine Daten vorhanden. Bitte erst mit diesem Charakter einloggen.",
+    last_updated = "Zuletzt aktualisiert: %s",
+    last_updated_never = "Zuletzt aktualisiert: noch keine Daten",
     options_test = "Test",
     ready_again = "%s ist wieder bereit",
     ready_multiple = "Wieder bereit: %s",
-    test_recipe_name = "Mondstoff",
+    test_recipe_name = "Testmaterial",
   },
   frFR = {
     unknown = "Inconnu",
@@ -120,14 +142,25 @@ local STRINGS = {
     options_show_profession_headers = "Afficher les en-tetes de metier",
     options_ready_sound = "Jouer le son de disponibilite",
     options_ready_message = "Afficher le message de disponibilite",
+    options_show_all_characters = "Afficher tous les personnages",
+    options_character_list = "Personnages",
+    options_all = "Tous",
+    options_none = "Aucun",
     options_recipe_list = "Recettes a cooldown",
     options_button_tooltip = "Ouvrir les options",
+    options_tab_sort = "Tri des onglets",
+    sort_name = "Nom",
+    sort_updated = "Mise a jour",
+    sort_realm = "Royaume",
     no_enabled_recipe = "Aucune recette a cooldown activee",
     no_config_recipes = "Aucune recette a cooldown apprise disponible.",
+    no_character_data = "Aucune donnee pour le moment. Connectez-vous d'abord avec ce personnage.",
+    last_updated = "Derniere mise a jour : %s",
+    last_updated_never = "Derniere mise a jour : aucune donnee",
     options_test = "Test",
     ready_again = "%s est de nouveau disponible",
     ready_multiple = "De nouveau disponibles : %s",
-    test_recipe_name = "Etoffe lunaire",
+    test_recipe_name = "Materiau de test",
   },
   esES = {
     unknown = "Desconocido",
@@ -161,14 +194,25 @@ local STRINGS = {
     options_show_profession_headers = "Mostrar encabezados de profesion",
     options_ready_sound = "Reproducir sonido de listo",
     options_ready_message = "Mostrar mensaje de listo",
+    options_show_all_characters = "Mostrar todos los personajes",
+    options_character_list = "Personajes",
+    options_all = "Todos",
+    options_none = "Ninguno",
     options_recipe_list = "Recetas con cooldown",
     options_button_tooltip = "Abrir opciones",
+    options_tab_sort = "Orden de pestañas",
+    sort_name = "Nombre",
+    sort_updated = "Actualizado",
+    sort_realm = "Reino",
     no_enabled_recipe = "No hay ninguna receta con cooldown activada",
     no_config_recipes = "Aun no hay recetas con cooldown aprendidas.",
+    no_character_data = "Aun no hay datos. Inicia sesion primero con este personaje.",
+    last_updated = "Ultima actualizacion: %s",
+    last_updated_never = "Ultima actualizacion: aun no hay datos",
     options_test = "Probar",
     ready_again = "%s vuelve a estar disponible",
     ready_multiple = "Disponibles de nuevo: %s",
-    test_recipe_name = "Tela lunar",
+    test_recipe_name = "Material de prueba",
   },
   ruRU = {
     unknown = "Neizvestno",
@@ -202,14 +246,25 @@ local STRINGS = {
     options_show_profession_headers = "Pokazyvat zagolovki professiy",
     options_ready_sound = "Proigryvat zvuk gotovnosti",
     options_ready_message = "Pokazyvat soobshchenie o gotovnosti",
+    options_show_all_characters = "Pokazyvat vseh personazhey",
+    options_character_list = "Personazhi",
+    options_all = "Vse",
+    options_none = "Nikogo",
     options_recipe_list = "Retsepty s kuldaunom",
     options_button_tooltip = "Otkryt nastroiki",
+    options_tab_sort = "Sortirovka vkladok",
+    sort_name = "Imya",
+    sort_updated = "Obnovleno",
+    sort_realm = "Mir",
     no_enabled_recipe = "Net vklyuchennyh retseptov s kuldaunom",
     no_config_recipes = "Net dostupnyh izuchennyh retseptov s kuldaunom.",
+    no_character_data = "Dannye eshche otsutstvuyut. Snachala voydite etim personazhem.",
+    last_updated = "Poslednee obnovlenie: %s",
+    last_updated_never = "Poslednee obnovlenie: dannyh net",
     options_test = "Test",
     ready_again = "%s snova gotov",
     ready_multiple = "Snova gotovy: %s",
-    test_recipe_name = "Lunnaya tkan",
+    test_recipe_name = "Testovyy material",
   },
   zhCN = {
     unknown = "未知",
@@ -243,10 +298,21 @@ local STRINGS = {
     options_show_profession_headers = "显示专业标题",
     options_ready_sound = "播放就绪提示音",
     options_ready_message = "显示就绪提示",
+    options_show_all_characters = "显示所有角色",
+    options_character_list = "角色",
+    options_all = "全部",
+    options_none = "清空",
     options_recipe_list = "冷却配方",
     options_button_tooltip = "打开选项",
+    options_tab_sort = "标签排序",
+    sort_name = "名称",
+    sort_updated = "更新时间",
+    sort_realm = "服务器",
     no_enabled_recipe = "未选择启用的冷却配方",
     no_config_recipes = "还没有可用的已学会冷却配方。",
+    no_character_data = "还没有数据。请先登录这个角色一次。",
+    last_updated = "上次更新：%s",
+    last_updated_never = "上次更新：还没有数据",
     options_test = "测试",
     ready_again = "%s 已再次就绪",
     ready_multiple = "已再次就绪：%s",
@@ -284,10 +350,21 @@ local STRINGS = {
     options_show_profession_headers = "전문 기술 제목 표시",
     options_ready_sound = "준비 소리 재생",
     options_ready_message = "준비 메시지 표시",
+    options_show_all_characters = "모든 캐릭터 표시",
+    options_character_list = "캐릭터",
+    options_all = "전체",
+    options_none = "없음",
     options_recipe_list = "쿨다운 제조법",
     options_button_tooltip = "옵션 열기",
+    options_tab_sort = "탭 정렬",
+    sort_name = "이름",
+    sort_updated = "업데이트",
+    sort_realm = "서버",
     no_enabled_recipe = "활성화된 쿨다운 제조법이 없습니다",
     no_config_recipes = "사용 가능한 배운 쿨다운 제조법이 아직 없습니다.",
+    no_character_data = "아직 데이터가 없습니다. 먼저 이 캐릭터로 접속해 주세요.",
+    last_updated = "최근 업데이트: %s",
+    last_updated_never = "최근 업데이트: 데이터 없음",
     options_test = "테스트",
     ready_again = "%s 사용 가능",
     ready_multiple = "다시 사용 가능: %s",
@@ -325,10 +402,21 @@ local STRINGS = {
     options_show_profession_headers = "顯示專業標題",
     options_ready_sound = "播放就緒提示音",
     options_ready_message = "顯示就緒提示",
+    options_show_all_characters = "顯示所有角色",
+    options_character_list = "角色",
+    options_all = "全部",
+    options_none = "清空",
     options_recipe_list = "冷卻配方",
     options_button_tooltip = "開啟選項",
+    options_tab_sort = "標籤排序",
+    sort_name = "名稱",
+    sort_updated = "更新時間",
+    sort_realm = "伺服器",
     no_enabled_recipe = "未選擇啟用的冷卻配方",
     no_config_recipes = "尚無可用的已學會冷卻配方。",
+    no_character_data = "尚無資料。請先登入此角色一次。",
+    last_updated = "上次更新：%s",
+    last_updated_never = "上次更新：尚無資料",
     options_test = "測試",
     ready_again = "%s 已再次可用",
     ready_multiple = "已再次可用：%s",
@@ -446,6 +534,8 @@ local executeCraftCraft
 local refreshFrame
 local updateMinimapButtonVisibility
 local openConfigFrame
+local ensureCharacterTabs
+local isCharacterEnabled
 
 local function lowercase(value)
   if not value then
@@ -474,6 +564,171 @@ local function getCharKey()
   end
 
   return playerName
+end
+
+local function splitCharKey(charKey)
+  local _, _, name, realm = string.find(charKey or "", "^(.-) %- (.+)$")
+  if name and realm then
+    return name, realm
+  end
+
+  return charKey or "", ""
+end
+
+local function getCharacterDisplayName(charKey)
+  local name = splitCharKey(charKey)
+  return name
+end
+
+local LEGACY_CHARACTER_KEYS = {
+  recipes = true,
+  dynamicRecipes = true,
+  professions = true,
+  scanned = true,
+  bank = true,
+  readyState = true,
+  meta = true,
+  lastUpdate = true,
+}
+
+local LEGACY_SETTINGS_KEYS = {
+  frame = true,
+  configFrame = true,
+  minimap = true,
+  recipeFilters = true,
+  characterFilters = true,
+  options = true,
+  visible = true,
+  tabSort = true,
+}
+
+local function migrateLegacyDatabase(targetDb, defaultCharKey)
+  if not targetDb then
+    return
+  end
+
+  targetDb.characters = targetDb.characters or {}
+  targetDb.settings = targetDb.settings or {}
+
+  local legacyHasCharacterData
+  for key in pairs(LEGACY_CHARACTER_KEYS) do
+    if targetDb[key] ~= nil then
+      legacyHasCharacterData = true
+      break
+    end
+  end
+
+  local legacyHasSettings
+  for key in pairs(LEGACY_SETTINGS_KEYS) do
+    if targetDb[key] ~= nil then
+      legacyHasSettings = true
+      break
+    end
+  end
+
+  if not legacyHasCharacterData and not legacyHasSettings then
+    return
+  end
+
+  local legacyMeta = targetDb.meta or {}
+  local legacyName = legacyMeta.name or UnitName("player") or L.unknown
+  local legacyRealm = legacyMeta.realm or (GetRealmName and GetRealmName()) or ""
+  local legacyCharKey = defaultCharKey or (legacyRealm ~= "" and (legacyName .. " - " .. legacyRealm) or legacyName)
+
+  if legacyHasCharacterData then
+    targetDb.characters[legacyCharKey] = targetDb.characters[legacyCharKey] or {}
+
+    for key in pairs(LEGACY_CHARACTER_KEYS) do
+      if targetDb[key] ~= nil and targetDb.characters[legacyCharKey][key] == nil then
+        targetDb.characters[legacyCharKey][key] = targetDb[key]
+      end
+      targetDb[key] = nil
+    end
+  end
+
+  if legacyHasSettings then
+    for key in pairs(LEGACY_SETTINGS_KEYS) do
+      if targetDb[key] ~= nil and targetDb.settings[key] == nil then
+        targetDb.settings[key] = targetDb[key]
+      end
+      targetDb[key] = nil
+    end
+  end
+end
+
+local function getLastUpdateValue(db)
+  if not db or not db.lastUpdate then
+    return 0
+  end
+
+  return db.lastUpdate or 0
+end
+
+local function mergeCharacterRecordIntoAccount(accountDb, charKey, sourceCharDb)
+  if not accountDb or not charKey or not sourceCharDb then
+    return
+  end
+
+  accountDb.characters = accountDb.characters or {}
+  local existing = accountDb.characters[charKey]
+  if not existing then
+    accountDb.characters[charKey] = sourceCharDb
+    return
+  end
+
+  if getLastUpdateValue(sourceCharDb) > getLastUpdateValue(existing) then
+    accountDb.characters[charKey] = sourceCharDb
+    return
+  end
+
+  for key, value in pairs(sourceCharDb) do
+    if existing[key] == nil then
+      existing[key] = value
+    end
+  end
+end
+
+local function mergePerCharacterDatabaseIntoAccount(accountDb, perCharacterDb, charKey)
+  if not accountDb or not perCharacterDb then
+    return
+  end
+
+  migrateLegacyDatabase(perCharacterDb, charKey)
+
+  if perCharacterDb.characters then
+    for sourceCharKey, sourceCharDb in pairs(perCharacterDb.characters) do
+      mergeCharacterRecordIntoAccount(accountDb, sourceCharKey, sourceCharDb)
+    end
+  end
+
+  if perCharacterDb.settings then
+    accountDb.settings = accountDb.settings or {}
+    for key, value in pairs(perCharacterDb.settings) do
+      if accountDb.settings[key] == nil then
+        accountDb.settings[key] = value
+      end
+    end
+  end
+end
+
+local function formatTimestamp(timestamp)
+  if not timestamp or timestamp <= 0 or not date then
+    return nil
+  end
+
+  return date("%Y-%m-%d %H:%M", timestamp)
+end
+
+local function getTabSortLabel(sortMode)
+  if sortMode == "updated" then
+    return T("sort_updated")
+  end
+
+  if sortMode == "realm" then
+    return T("sort_realm")
+  end
+
+  return T("sort_name")
 end
 
 local function formatDuration(seconds)
@@ -687,48 +942,70 @@ local function recipeMatchesName(recipeDef, recipeName)
 end
 
 local function initializeDatabase()
-  CraftCooldownsDB = CraftCooldownsDB or {}
-  CraftCooldownsDB.characters = CraftCooldownsDB.characters or {}
-
   local charKey = getCharKey()
-  CraftCooldownsDB.characters[charKey] = CraftCooldownsDB.characters[charKey] or {}
+  CraftCooldownsAccountDB = CraftCooldownsAccountDB or {}
+  CraftCooldownsDB = CraftCooldownsDB or {}
 
-  CCD.db = CraftCooldownsDB.characters[charKey]
-  CCD.db.frame = CCD.db.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0, width = 220, height = 140 }
-  CCD.db.configFrame = CCD.db.configFrame or { point = "CENTER", relativePoint = "CENTER", x = 20, y = -20 }
-  CCD.db.minimap = CCD.db.minimap or { angle = 45 }
+  migrateLegacyDatabase(CraftCooldownsAccountDB, charKey)
+  mergePerCharacterDatabaseIntoAccount(CraftCooldownsAccountDB, CraftCooldownsDB, charKey)
+
+  CraftCooldownsAccountDB.characters = CraftCooldownsAccountDB.characters or {}
+  CraftCooldownsAccountDB.settings = CraftCooldownsAccountDB.settings or {}
+  CraftCooldownsAccountDB.characters[charKey] = CraftCooldownsAccountDB.characters[charKey] or {}
+
+  CCD.root = CraftCooldownsAccountDB
+  CCD.currentCharKey = charKey
+  CCD.settings = CraftCooldownsAccountDB.settings
+  CCD.db = CraftCooldownsAccountDB.characters[charKey]
+  CCD.settings.frame = CCD.settings.frame or { point = "CENTER", relativePoint = "CENTER", x = 0, y = 0, width = 220, height = 140 }
+  CCD.settings.configFrame = CCD.settings.configFrame or { point = "CENTER", relativePoint = "CENTER", x = 20, y = -20 }
+  CCD.settings.minimap = CCD.settings.minimap or { angle = 45 }
+  CCD.settings.recipeFilters = CCD.settings.recipeFilters or {}
+  CCD.settings.characterFilters = CCD.settings.characterFilters or {}
+  CCD.settings.options = CCD.settings.options or {}
+  if CCD.settings.visible == nil then
+    CCD.settings.visible = true
+  end
+  if not CCD.settings.tabSort or CCD.settings.tabSort == "" then
+    CCD.settings.tabSort = "name"
+  end
+
   CCD.db.recipes = CCD.db.recipes or {}
-  CCD.db.recipeFilters = CCD.db.recipeFilters or {}
   CCD.db.dynamicRecipes = CCD.db.dynamicRecipes or {}
   CCD.db.professions = CCD.db.professions or {}
   CCD.db.scanned = CCD.db.scanned or {}
   CCD.db.bank = CCD.db.bank or { counts = {}, lastUpdate = 0 }
-  CCD.db.options = CCD.db.options or {}
   CCD.db.readyState = CCD.db.readyState or {}
-  CCD.db.visible = CCD.db.visible
-
-  if CCD.db.visible == nil then
-    CCD.db.visible = true
+  CCD.db.meta = CCD.db.meta or {}
+  CCD.db.meta.name = UnitName("player") or getCharacterDisplayName(charKey)
+  CCD.db.meta.realm = GetRealmName and GetRealmName() or ""
+  CCD.db.meta.lastSeen = time()
+  if next(CCD.db.recipes or {}) then
+    CCD.db.lastUpdate = time()
   end
 
-  if CCD.db.options.showMinimapButton == nil then
-    CCD.db.options.showMinimapButton = true
+  if CCD.settings.options.showMinimapButton == nil then
+    CCD.settings.options.showMinimapButton = true
   end
 
-  if CCD.db.options.lockFrame == nil then
-    CCD.db.options.lockFrame = false
+  if CCD.settings.options.lockFrame == nil then
+    CCD.settings.options.lockFrame = false
   end
 
-  if CCD.db.options.showProfessionHeaders == nil then
-    CCD.db.options.showProfessionHeaders = true
+  if CCD.settings.options.showProfessionHeaders == nil then
+    CCD.settings.options.showProfessionHeaders = true
   end
 
-  if CCD.db.options.readySound == nil then
-    CCD.db.options.readySound = true
+  if CCD.settings.options.readySound == nil then
+    CCD.settings.options.readySound = true
   end
 
-  if CCD.db.options.readyMessage == nil then
-    CCD.db.options.readyMessage = true
+  if CCD.settings.options.readyMessage == nil then
+    CCD.settings.options.readyMessage = true
+  end
+
+  if CCD.settings.options.showAllCharacters == nil then
+    CCD.settings.options.showAllCharacters = true
   end
 
   for professionKey, recipes in pairs(CCD.db.dynamicRecipes) do
@@ -736,9 +1013,12 @@ local function initializeDatabase()
       registerRecipeDef(recipeDef, professionKey)
     end
   end
+
+  CCD.selectedCharacterKey = CCD.currentCharKey
 end
 
-local function getRecipesForProfession(professionKey)
+local function getRecipesForProfession(professionKey, charDb)
+  charDb = charDb or CCD.db
   local recipes = {}
   local seen = {}
 
@@ -777,8 +1057,8 @@ local function getRecipesForProfession(professionKey)
     addRecipe(recipeDef)
   end
 
-  if CCD.db and CCD.db.dynamicRecipes and CCD.db.dynamicRecipes[professionKey] then
-    for _, recipeDef in pairs(CCD.db.dynamicRecipes[professionKey]) do
+  if charDb and charDb.dynamicRecipes and charDb.dynamicRecipes[professionKey] then
+    for _, recipeDef in pairs(charDb.dynamicRecipes[professionKey]) do
       addRecipe(recipeDef)
     end
   end
@@ -804,6 +1084,117 @@ local function getAllKnownCooldownRecipes()
   end)
 
   return recipes
+end
+
+local function getCharacterRecord(charKey)
+  if not CCD.root or not CCD.root.characters then
+    return nil
+  end
+
+  return CCD.root.characters[charKey]
+end
+
+local function getActiveCharacterKey()
+  if not (CCD.settings and CCD.settings.options and CCD.settings.options.showAllCharacters) then
+    return CCD.currentCharKey or getCharKey()
+  end
+
+  if CCD.selectedCharacterKey and not isCharacterEnabled(CCD.selectedCharacterKey) then
+    return CCD.currentCharKey or getCharKey()
+  end
+
+  return CCD.selectedCharacterKey or CCD.currentCharKey or getCharKey()
+end
+
+local function getActiveCharacterDB()
+  return getCharacterRecord(getActiveCharacterKey()) or CCD.db
+end
+
+local function getCharacterLastUpdated(charDb)
+  if not charDb then
+    return nil
+  end
+
+  if charDb.lastUpdate and charDb.lastUpdate > 0 then
+    return charDb.lastUpdate
+  end
+
+  return nil
+end
+
+local function getSortedCharacterKeys()
+  local keys = {}
+  local currentKey = CCD.currentCharKey
+  local sortMode = CCD.settings and CCD.settings.tabSort or "name"
+
+  for charKey in pairs((CCD.root and CCD.root.characters) or {}) do
+    table.insert(keys, charKey)
+  end
+
+  table.sort(keys, function(a, b)
+    if a == currentKey then
+      return true
+    end
+
+    if b == currentKey then
+      return nil
+    end
+
+    local aDb = getCharacterRecord(a) or {}
+    local bDb = getCharacterRecord(b) or {}
+    local aName, aRealm = splitCharKey(a)
+    local bName, bRealm = splitCharKey(b)
+
+    if sortMode == "updated" then
+      local aUpdated = getCharacterLastUpdated(aDb) or 0
+      local bUpdated = getCharacterLastUpdated(bDb) or 0
+      if aUpdated ~= bUpdated then
+        return aUpdated > bUpdated
+      end
+    elseif sortMode == "realm" then
+      if aRealm ~= bRealm then
+        return aRealm < bRealm
+      end
+    end
+
+    if aName ~= bName then
+      return aName < bName
+    end
+
+    return a < b
+  end)
+
+  return keys
+end
+
+isCharacterEnabled = function(charKey, pendingFilters)
+  if charKey == CCD.currentCharKey then
+    return true
+  end
+
+  local filters = pendingFilters or (CCD.settings and CCD.settings.characterFilters)
+  if not filters then
+    return true
+  end
+
+  local value = filters[charKey]
+  if value == nil then
+    return true
+  end
+
+  return value and true or nil
+end
+
+local function getDisplayCharacterKeys(pendingFilters)
+  local keys = {}
+
+  for _, charKey in ipairs(getSortedCharacterKeys()) do
+    if isCharacterEnabled(charKey, pendingFilters) then
+      table.insert(keys, charKey)
+    end
+  end
+
+  return keys
 end
 
 local function getConfigurableRecipes()
@@ -832,11 +1223,11 @@ local function getConfigurableRecipes()
 end
 
 local function isRecipeEnabled(recipeId)
-  if not CCD.db or not CCD.db.recipeFilters then
+  if not CCD.settings or not CCD.settings.recipeFilters then
     return true
   end
 
-  local value = CCD.db.recipeFilters[recipeId]
+  local value = CCD.settings.recipeFilters[recipeId]
   if value == nil then
     return true
   end
@@ -848,11 +1239,11 @@ local function triggerReadyNotification(recipeDef)
   local recipeName = getRecipeDisplayName(recipeDef)
   local message = string.format(T("ready_again"), recipeName)
 
-  if CCD.db.options.readySound then
+  if CCD.settings and CCD.settings.options and CCD.settings.options.readySound then
     playReadySound()
   end
 
-  if CCD.db.options.readyMessage then
+  if CCD.settings and CCD.settings.options and CCD.settings.options.readyMessage then
     showCenterMessage(message)
     printMessage(message)
   end
@@ -876,11 +1267,11 @@ local function triggerReadyNotifications(recipeDefs)
 
   local message = string.format(T("ready_multiple"), table.concat(names, ", "))
 
-  if CCD.db.options.readySound then
+  if CCD.settings and CCD.settings.options and CCD.settings.options.readySound then
     playReadySound()
   end
 
-  if CCD.db.options.readyMessage then
+  if CCD.settings and CCD.settings.options and CCD.settings.options.readyMessage then
     showCenterMessage(message)
     printMessage(message)
   end
@@ -1118,6 +1509,7 @@ local function saveRecipeCooldown(professionKey, recipeDef, cooldown, reagents)
   end
 
   CCD.db.recipes[recipeDef.id] = recipeState
+  CCD.db.lastUpdate = time()
 end
 
 local function markMissingRecipesAsUnknown(professionKey, foundRecipes)
@@ -1186,6 +1578,7 @@ local function scanTradeSkillFrame()
 
   markMissingRecipesAsUnknown(professionKey, foundRecipes)
   CCD.db.scanned[professionKey] = time()
+  CCD.db.lastUpdate = time()
   CCD.tradeSkillScanInProgress = nil
 
   if CCD.pendingCraftRecipeId then
@@ -1253,6 +1646,7 @@ local function scanCraftFrame()
 
   markMissingRecipesAsUnknown(professionKey, foundRecipes)
   CCD.db.scanned[professionKey] = time()
+  CCD.db.lastUpdate = time()
   CCD.craftScanInProgress = nil
 
   if CCD.pendingCraftRecipeId then
@@ -1798,20 +2192,44 @@ local function getRowTextColor(isHeader, isHint, isReady, isCooldown)
   return 1.0, 1.0, 1.0
 end
 
-local function buildEntries()
+local function buildEntries(forCharKey)
   local entries = {}
+  local activeCharKey = forCharKey or getActiveCharacterKey()
+  local activeDb = getCharacterRecord(activeCharKey) or getActiveCharacterDB()
   local hasAnyProfession = nil
 
+  if activeCharKey ~= CCD.currentCharKey then
+    local lastUpdated = formatTimestamp(getCharacterLastUpdated(activeDb))
+    if lastUpdated then
+      table.insert(entries, {
+        label = string.format(T("last_updated"), lastUpdated),
+        status = "",
+        isHint = true,
+      })
+    else
+      table.insert(entries, {
+        label = T("last_updated_never"),
+        status = "",
+        isHint = true,
+      })
+      table.insert(entries, {
+        label = T("no_character_data"),
+        status = "",
+        isHint = true,
+      })
+    end
+  end
+
   for _, professionKey in ipairs(PROFESSIONS_WITH_COOLDOWNS) do
-    if CCD.db.professions[professionKey] then
-      if not CCD.db.scanned[professionKey] then
+    if activeDb.professions[professionKey] then
+      if not activeDb.scanned[professionKey] then
         -- Do not show empty profession categories before any cooldown recipe was found.
       else
         local learnedAny = nil
         local visibleEntries = {}
 
-        for _, recipeDef in ipairs(getRecipesForProfession(professionKey)) do
-          local recipeState = CCD.db.recipes[recipeDef.id]
+        for _, recipeDef in ipairs(getRecipesForProfession(professionKey, activeDb)) do
+          local recipeState = activeDb.recipes[recipeDef.id]
           if recipeState and recipeState.learned then
             learnedAny = true
             if isRecipeEnabled(recipeDef.id) then
@@ -1834,7 +2252,7 @@ local function buildEntries()
         if table.getn(visibleEntries) > 0 then
           hasAnyProfession = true
 
-          if CCD.db.options.showProfessionHeaders then
+          if CCD.settings.options.showProfessionHeaders then
             table.insert(entries, {
               label = getProfessionDisplayName(professionKey),
               status = "",
@@ -1851,11 +2269,19 @@ local function buildEntries()
   end
 
   if not hasAnyProfession then
-    table.insert(entries, {
-      label = L.no_professions,
-      status = "",
-      isHint = true,
-    })
+    if activeCharKey == CCD.currentCharKey or next(activeDb.scanned or {}) then
+      table.insert(entries, {
+        label = L.no_professions,
+        status = "",
+        isHint = true,
+      })
+    elseif table.getn(entries) == 0 then
+      table.insert(entries, {
+        label = T("no_character_data"),
+        status = "",
+        isHint = true,
+      })
+    end
   end
 
   return entries
@@ -1865,6 +2291,7 @@ local MAIN_FRAME_MIN_WIDTH = 220
 local MAIN_FRAME_MIN_HEIGHT = 70
 local MAIN_FRAME_MAX_WIDTH = 420
 local MAIN_FRAME_MAX_HEIGHT = 600
+local MAIN_FRAME_ROW_TOP = 66
 
 local function clamp(value, minValue, maxValue)
   if value < minValue then
@@ -1891,8 +2318,8 @@ local function ensureRows(count)
     local rowIndex = table.getn(CCD.rows) + 1
     local row = CreateFrame("Frame", nil, CCD.frame)
     row:SetHeight(18)
-    row:SetPoint("TOPLEFT", CCD.frame, "TOPLEFT", 12, -28 - ((rowIndex - 1) * 18))
-    row:SetPoint("TOPRIGHT", CCD.frame, "TOPRIGHT", -12, -28 - ((rowIndex - 1) * 18))
+    row:SetPoint("TOPLEFT", CCD.frame, "TOPLEFT", 12, -MAIN_FRAME_ROW_TOP - ((rowIndex - 1) * 18))
+    row:SetPoint("TOPRIGHT", CCD.frame, "TOPRIGHT", -12, -MAIN_FRAME_ROW_TOP - ((rowIndex - 1) * 18))
 
     row.left = row:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     row.left:SetPoint("LEFT", row, "LEFT", 0, 0)
@@ -1936,8 +2363,29 @@ local function updateFrameWidth(entries)
     return
   end
 
+  local measuredEntries = entries or {}
+  if CCD.settings and CCD.settings.options and CCD.settings.options.showAllCharacters then
+    local widestEntries = measuredEntries
+    local widestWidth = 0
+    for _, charKey in ipairs(getDisplayCharacterKeys()) do
+      local charEntries = buildEntries(charKey)
+      local charWidth = 0
+      for _, entry in ipairs(charEntries or {}) do
+        if entry and entry.label then
+          CCD.frame.measureFS:SetText(entry.label)
+          charWidth = math.max(charWidth, CCD.frame.measureFS:GetStringWidth() or 0)
+        end
+      end
+      if charWidth > widestWidth then
+        widestWidth = charWidth
+        widestEntries = charEntries
+      end
+    end
+    measuredEntries = widestEntries
+  end
+
   local longestWidth = 0
-  for _, entry in ipairs(entries or {}) do
+  for _, entry in ipairs(measuredEntries or {}) do
     if entry and entry.label then
       CCD.frame.measureFS:SetText(entry.label)
       local width = CCD.frame.measureFS:GetStringWidth() or 0
@@ -1948,16 +2396,23 @@ local function updateFrameWidth(entries)
   end
 
   local autoWidth = math.max(MAIN_FRAME_MIN_WIDTH, math.min(360, math.ceil(longestWidth) + 110))
+  local tabWidth = 0
+  for _, tab in ipairs(CCD.tabs or {}) do
+    if tab:IsShown() then
+      tabWidth = tabWidth + tab:GetWidth() + 4
+    end
+  end
+  autoWidth = math.max(autoWidth, math.min(MAIN_FRAME_MAX_WIDTH, tabWidth + 20))
   local targetWidth = autoWidth
 
-  if CCD.db.frame.userSized and CCD.db.frame.width then
-    local storedWidth = math.max(MAIN_FRAME_MIN_WIDTH, math.min(MAIN_FRAME_MAX_WIDTH, CCD.db.frame.width))
+  if CCD.settings.frame.userSized and CCD.settings.frame.width then
+    local storedWidth = math.max(MAIN_FRAME_MIN_WIDTH, math.min(MAIN_FRAME_MAX_WIDTH, CCD.settings.frame.width))
     if storedWidth >= autoWidth then
       targetWidth = storedWidth
     else
-      CCD.db.frame.userSized = nil
-      CCD.db.frame.width = autoWidth
-      CCD.db.frame.height = nil
+      CCD.settings.frame.userSized = nil
+      CCD.settings.frame.width = autoWidth
+      CCD.settings.frame.height = nil
     end
   end
 
@@ -1971,10 +2426,14 @@ local function saveConfigFramePosition()
   end
 
   local point, _, relativePoint, xOfs, yOfs = CCD.configFrame:GetPoint()
-  CCD.db.configFrame.point = point
-  CCD.db.configFrame.relativePoint = relativePoint
-  CCD.db.configFrame.x = xOfs
-  CCD.db.configFrame.y = yOfs
+  CCD.settings.configFrame.point = point
+  CCD.settings.configFrame.relativePoint = relativePoint
+  CCD.settings.configFrame.x = xOfs
+  CCD.settings.configFrame.y = yOfs
+end
+
+local function normalizeConfigFrameAnchor()
+  return
 end
 
 local function applyFrameLockState()
@@ -1982,10 +2441,10 @@ local function applyFrameLockState()
     return
   end
 
-  CCD.frame:SetMovable(not CCD.db.options.lockFrame)
+  CCD.frame:SetMovable(not CCD.settings.options.lockFrame)
   CCD.frame:RegisterForDrag("LeftButton")
   if CCD.frame.resizeButton then
-    if CCD.db.options.lockFrame then
+    if CCD.settings.options.lockFrame then
       CCD.frame.resizeButton:Hide()
     else
       CCD.frame.resizeButton:Show()
@@ -1998,17 +2457,138 @@ local function updateConfigFrameLayout()
     return
   end
 
-  local total = table.getn(CCD.configRecipeList or {})
-  local visibleRows = math.min(math.max(total, 1), 12)
-  local listHeight = math.max(38, 10 + (visibleRows * 20))
-  local frameHeight = 296 + listHeight
+  local frame = CCD.configFrame
+  local showCharacters = CCD.pendingOptions and CCD.pendingOptions.showAllCharacters
+  local recipeTotal = table.getn(CCD.configRecipeList or {})
+  local recipeVisibleRows = math.min(math.max(recipeTotal, 1), 12)
+  local recipeHeight = math.max(38, 10 + (recipeVisibleRows * 20))
 
-  CCD.configFrame.listBg:SetHeight(listHeight)
-  CCD.configFrame.testButton:ClearAllPoints()
-  CCD.configFrame.testButton:SetPoint("BOTTOM", CCD.configFrame, "BOTTOM", 0, 44)
-  CCD.configFrame.saveButton:ClearAllPoints()
-  CCD.configFrame.saveButton:SetPoint("BOTTOM", CCD.configFrame, "BOTTOM", 0, 16)
-  CCD.configFrame:SetHeight(frameHeight)
+  frame.sortLabel:Hide()
+  frame.sortName:Hide()
+  frame.sortUpdated:Hide()
+  frame.sortRealm:Hide()
+  frame.characterLabel:Hide()
+  frame.characterBg:Hide()
+  frame.characterScroll:Hide()
+  frame.charAllButton:Hide()
+  frame.charNoneButton:Hide()
+  frame.characterEmptyText:Hide()
+
+  frame.testButton:ClearAllPoints()
+  frame.testButton:SetPoint("TOP", frame, "TOP", 0, -128)
+
+  frame.showAllCharacters:ClearAllPoints()
+  frame.showAllCharacters:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -154)
+
+  if showCharacters then
+    local charTotal = table.getn(CCD.configCharacterList or {})
+    local charVisibleRows = math.min(math.max(charTotal, 1), 8)
+    local charHeight = math.max(38, 10 + (charVisibleRows * 20))
+
+    frame.sortLabel:ClearAllPoints()
+    frame.sortLabel:SetPoint("TOPLEFT", frame.showAllCharacters, "BOTTOMLEFT", 4, -10)
+    frame.sortLabel:Show()
+
+    frame.sortName:ClearAllPoints()
+    frame.sortName:SetPoint("TOPLEFT", frame.sortLabel, "BOTTOMLEFT", -4, -2)
+    frame.sortName:Show()
+
+    frame.sortUpdated:ClearAllPoints()
+    frame.sortUpdated:SetPoint("LEFT", frame.sortName, "RIGHT", 110, 0)
+    frame.sortUpdated:Show()
+
+    frame.sortRealm:ClearAllPoints()
+    frame.sortRealm:SetPoint("LEFT", frame.sortUpdated, "RIGHT", 110, 0)
+    frame.sortRealm:Show()
+
+    frame.characterLabel:ClearAllPoints()
+    frame.characterLabel:SetPoint("TOPLEFT", frame.sortName, "BOTTOMLEFT", 4, -10)
+    frame.characterLabel:Show()
+
+    frame.characterBg:ClearAllPoints()
+    frame.characterBg:SetPoint("TOPLEFT", frame.characterLabel, "BOTTOMLEFT", -2, -6)
+    frame.characterBg:SetHeight(charHeight)
+    frame.characterBg:Show()
+
+    frame.characterScroll:Show()
+    frame.charAllButton:ClearAllPoints()
+    frame.charAllButton:SetPoint("TOPLEFT", frame.characterBg, "BOTTOMLEFT", 0, -8)
+    frame.charAllButton:Show()
+
+    frame.charNoneButton:ClearAllPoints()
+    frame.charNoneButton:SetPoint("LEFT", frame.charAllButton, "RIGHT", 8, 0)
+    frame.charNoneButton:Show()
+ 
+    frame.listLabel:ClearAllPoints()
+    frame.listLabel:SetPoint("TOPLEFT", frame.charAllButton, "BOTTOMLEFT", 0, -18)
+  else
+    frame.listLabel:ClearAllPoints()
+    frame.listLabel:SetPoint("TOPLEFT", frame.showAllCharacters, "BOTTOMLEFT", 4, -18)
+  end
+
+  frame.listBg:ClearAllPoints()
+  frame.listBg:SetPoint("TOPLEFT", frame.listLabel, "BOTTOMLEFT", -2, -6)
+  frame.listBg:SetHeight(recipeHeight)
+
+  frame.saveButton:ClearAllPoints()
+  frame.saveButton:SetPoint("TOP", frame.listBg, "BOTTOM", 0, -12)
+
+  local bottomPadding = 54
+  local topPadding = 220
+  local extraHeight = showCharacters and ((frame.characterBg:GetHeight() or 0) + 96) or 0
+  local newHeight = topPadding + extraHeight + recipeHeight + bottomPadding
+  frame:SetHeight(newHeight)
+end
+
+local function updateConfigCharacterList()
+  if not CCD.configFrame or not CCD.configFrame:IsShown() then
+    return
+  end
+
+  CCD.configCharacterList = getSortedCharacterKeys()
+  local rows = CCD.configCharacterRows or {}
+  local total = table.getn(CCD.configCharacterList)
+  local visible = table.getn(rows)
+  local offset = 0
+
+  if total > visible then
+    CCD.characterScroll:Show()
+  else
+    CCD.characterScroll:Hide()
+  end
+
+  if FauxScrollFrame_GetOffset then
+    FauxScrollFrame_Update(CCD.characterScroll, total, visible, 18)
+    offset = FauxScrollFrame_GetOffset(CCD.characterScroll)
+  end
+
+  if total == 0 then
+    CCD.configFrame.characterEmptyText:Show()
+  else
+    CCD.configFrame.characterEmptyText:Hide()
+  end
+
+  for index, row in ipairs(rows) do
+    local charKey = CCD.configCharacterList[index + offset]
+    if charKey then
+      local name, realm = splitCharKey(charKey)
+      row.charKey = charKey
+      row.label:SetText(realm ~= "" and (name .. " - " .. realm) or name)
+      row.check:SetChecked(isCharacterEnabled(charKey, CCD.pendingCharacterFilters) and 1 or nil)
+      if charKey == CCD.currentCharKey then
+        row.check:Disable()
+      else
+        row.check:Enable()
+      end
+      row:Show()
+    else
+      row.charKey = nil
+      row.label:SetText("")
+      row.check:SetChecked(nil)
+      row.check:Enable()
+      row:Hide()
+    end
+  end
 end
 
 local function updateConfigRecipeList()
@@ -2018,6 +2598,7 @@ local function updateConfigRecipeList()
 
   CCD.configRecipeList = getConfigurableRecipes()
   updateConfigFrameLayout()
+  updateConfigCharacterList()
   if table.getn(CCD.configRecipeList) == 0 then
     CCD.configFrame.emptyText:Show()
   else
@@ -2071,19 +2652,36 @@ local function refreshConfigFrame()
   CCD.configFrame.showHeaders:SetChecked(CCD.pendingOptions.showProfessionHeaders and 1 or nil)
   CCD.configFrame.readySound:SetChecked(CCD.pendingOptions.readySound and 1 or nil)
   CCD.configFrame.readyMessage:SetChecked(CCD.pendingOptions.readyMessage and 1 or nil)
+  CCD.configFrame.showAllCharacters:SetChecked(CCD.pendingOptions.showAllCharacters and 1 or nil)
+  CCD.configFrame.sortName:SetChecked((CCD.pendingOptions.tabSort or "name") == "name" and 1 or nil)
+  CCD.configFrame.sortUpdated:SetChecked((CCD.pendingOptions.tabSort or "name") == "updated" and 1 or nil)
+  CCD.configFrame.sortRealm:SetChecked((CCD.pendingOptions.tabSort or "name") == "realm" and 1 or nil)
   updateConfigRecipeList()
 end
 
 local function saveConfig()
-  CCD.db.options.showMinimapButton = CCD.pendingOptions.showMinimapButton and true or false
-  CCD.db.options.lockFrame = CCD.pendingOptions.lockFrame and true or false
-  CCD.db.options.showProfessionHeaders = CCD.pendingOptions.showProfessionHeaders and true or false
-  CCD.db.options.readySound = CCD.pendingOptions.readySound and true or false
-  CCD.db.options.readyMessage = CCD.pendingOptions.readyMessage and true or false
+  CCD.settings.options.showMinimapButton = CCD.pendingOptions.showMinimapButton and true or false
+  CCD.settings.options.lockFrame = CCD.pendingOptions.lockFrame and true or false
+  CCD.settings.options.showProfessionHeaders = CCD.pendingOptions.showProfessionHeaders and true or false
+  CCD.settings.options.readySound = CCD.pendingOptions.readySound and true or false
+  CCD.settings.options.readyMessage = CCD.pendingOptions.readyMessage and true or false
+  CCD.settings.options.showAllCharacters = CCD.pendingOptions.showAllCharacters and true or false
+  CCD.settings.tabSort = CCD.pendingOptions.tabSort or CCD.settings.tabSort or "name"
 
-  CCD.db.recipeFilters = CCD.db.recipeFilters or {}
+  CCD.settings.recipeFilters = CCD.settings.recipeFilters or {}
   for recipeId, value in pairs(CCD.pendingRecipeFilters or {}) do
-    CCD.db.recipeFilters[recipeId] = value and true or false
+    CCD.settings.recipeFilters[recipeId] = value and true or false
+  end
+
+  CCD.settings.characterFilters = CCD.settings.characterFilters or {}
+  for charKey, value in pairs(CCD.pendingCharacterFilters or {}) do
+    CCD.settings.characterFilters[charKey] = value and true or false
+  end
+
+  if not CCD.settings.options.showAllCharacters then
+    CCD.selectedCharacterKey = CCD.currentCharKey
+  elseif not isCharacterEnabled(CCD.selectedCharacterKey, CCD.settings.characterFilters) then
+    CCD.selectedCharacterKey = CCD.currentCharKey
   end
 
   updateMinimapButtonVisibility()
@@ -2150,35 +2748,177 @@ local function createConfigFrame()
   end)
 
   frame.lockFrame = CreateFrame("CheckButton", "CraftCooldownsConfigLockFrame", frame, "UICheckButtonTemplate")
-  frame.lockFrame:SetPoint("TOPLEFT", frame.showMinimap, "BOTTOMLEFT", 0, -4)
+  frame.lockFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 210, -34)
   getglobal(frame.lockFrame:GetName() .. "Text"):SetText(T("options_lock_frame"))
   frame.lockFrame:SetScript("OnClick", function()
     CCD.pendingOptions.lockFrame = this:GetChecked() and true or false
   end)
 
   frame.showHeaders = CreateFrame("CheckButton", "CraftCooldownsConfigShowHeaders", frame, "UICheckButtonTemplate")
-  frame.showHeaders:SetPoint("TOPLEFT", frame.lockFrame, "BOTTOMLEFT", 0, -4)
+  frame.showHeaders:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -66)
   getglobal(frame.showHeaders:GetName() .. "Text"):SetText(T("options_show_profession_headers"))
   frame.showHeaders:SetScript("OnClick", function()
     CCD.pendingOptions.showProfessionHeaders = this:GetChecked() and true or false
   end)
 
+  frame.showAllCharacters = CreateFrame("CheckButton", "CraftCooldownsConfigShowAllCharacters", frame, "UICheckButtonTemplate")
+  frame.showAllCharacters:SetPoint("TOPLEFT", frame, "TOPLEFT", 210, -66)
+  getglobal(frame.showAllCharacters:GetName() .. "Text"):SetText(T("options_show_all_characters"))
+  frame.showAllCharacters:SetScript("OnClick", function()
+    CCD.pendingOptions.showAllCharacters = this:GetChecked() and true or false
+    updateConfigRecipeList()
+  end)
+
   frame.readySound = CreateFrame("CheckButton", "CraftCooldownsConfigReadySound", frame, "UICheckButtonTemplate")
-  frame.readySound:SetPoint("TOPLEFT", frame.showHeaders, "BOTTOMLEFT", 0, -4)
+  frame.readySound:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -98)
   getglobal(frame.readySound:GetName() .. "Text"):SetText(T("options_ready_sound"))
   frame.readySound:SetScript("OnClick", function()
     CCD.pendingOptions.readySound = this:GetChecked() and true or false
   end)
 
   frame.readyMessage = CreateFrame("CheckButton", "CraftCooldownsConfigReadyMessage", frame, "UICheckButtonTemplate")
-  frame.readyMessage:SetPoint("LEFT", frame.readySound, "RIGHT", 150, 0)
+  frame.readyMessage:SetPoint("TOPLEFT", frame, "TOPLEFT", 210, -98)
   getglobal(frame.readyMessage:GetName() .. "Text"):SetText(T("options_ready_message"))
   frame.readyMessage:SetScript("OnClick", function()
     CCD.pendingOptions.readyMessage = this:GetChecked() and true or false
   end)
 
+  local testAnchor = CreateFrame("Frame", nil, frame)
+  frame.testAnchor = testAnchor
+  testAnchor:SetHeight(24)
+  testAnchor:SetPoint("TOPLEFT", frame.readySound, "TOPLEFT", 0, 0)
+  testAnchor:SetPoint("TOPRIGHT", frame.readyMessage, "TOPRIGHT", 0, 0)
+
+  local testButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+  frame.testButton = testButton
+  testButton:SetWidth(100)
+  testButton:SetHeight(22)
+  testButton:SetText(T("options_test"))
+  testButton:SetScript("OnClick", function()
+    if CCD.pendingOptions.readySound then
+      playReadySound()
+    end
+    if CCD.pendingOptions.readyMessage then
+      showCenterMessage(string.format(T("ready_again"), T("test_recipe_name")))
+    end
+  end)
+
+  local sortLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  frame.sortLabel = sortLabel
+  sortLabel:SetText(T("options_tab_sort"))
+
+  frame.sortName = CreateFrame("CheckButton", "CraftCooldownsConfigSortName", frame, "UIRadioButtonTemplate")
+  getglobal(frame.sortName:GetName() .. "Text"):SetText(T("sort_name"))
+  frame.sortName:SetScript("OnClick", function()
+    CCD.pendingOptions.tabSort = "name"
+    refreshConfigFrame()
+  end)
+
+  frame.sortUpdated = CreateFrame("CheckButton", "CraftCooldownsConfigSortUpdated", frame, "UIRadioButtonTemplate")
+  getglobal(frame.sortUpdated:GetName() .. "Text"):SetText(T("sort_updated"))
+  frame.sortUpdated:SetScript("OnClick", function()
+    CCD.pendingOptions.tabSort = "updated"
+    refreshConfigFrame()
+  end)
+
+  frame.sortRealm = CreateFrame("CheckButton", "CraftCooldownsConfigSortRealm", frame, "UIRadioButtonTemplate")
+  getglobal(frame.sortRealm:GetName() .. "Text"):SetText(T("sort_realm"))
+  frame.sortRealm:SetScript("OnClick", function()
+    CCD.pendingOptions.tabSort = "realm"
+    refreshConfigFrame()
+  end)
+
+  local characterLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  frame.characterLabel = characterLabel
+  characterLabel:SetText(T("options_character_list"))
+
+  local characterBg = CreateFrame("Frame", nil, frame)
+  frame.characterBg = characterBg
+  characterBg:SetWidth(384)
+  characterBg:SetHeight(60)
+  characterBg:SetBackdrop({
+    bgFile = "Interface\\Buttons\\WHITE8X8",
+    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    tile = true,
+    tileSize = 8,
+    edgeSize = 12,
+    insets = { left = 2, right = 2, top = 2, bottom = 2 },
+  })
+  characterBg:SetBackdropColor(0.03, 0.03, 0.03, 0.85)
+  characterBg:SetBackdropBorderColor(0.4, 0.4, 0.4, 1.0)
+
+  local characterEmptyText = characterBg:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+  frame.characterEmptyText = characterEmptyText
+  characterEmptyText:SetPoint("CENTER", characterBg, "CENTER", 0, 0)
+  characterEmptyText:SetText(T("no_character_data"))
+  characterEmptyText:Hide()
+
+  local characterScroll = CreateFrame("ScrollFrame", "CraftCooldownsConfigCharacterScroll", frame, "FauxScrollFrameTemplate")
+  frame.characterScroll = characterScroll
+  CCD.characterScroll = characterScroll
+  characterScroll:SetPoint("TOPLEFT", characterBg, "TOPLEFT", 0, -4)
+  characterScroll:SetPoint("BOTTOMRIGHT", characterBg, "BOTTOMRIGHT", -24, 4)
+  characterScroll:SetScript("OnVerticalScroll", function()
+    FauxScrollFrame_OnVerticalScroll(18, updateConfigCharacterList)
+  end)
+
+  CCD.configCharacterRows = CCD.configCharacterRows or {}
+  for index = 1, 8 do
+    local row = CreateFrame("Frame", "CraftCooldownsConfigCharacterRow" .. index, characterBg)
+    row:SetWidth(348)
+    row:SetHeight(18)
+    row:SetPoint("TOPLEFT", characterBg, "TOPLEFT", 8, -8 - ((index - 1) * 20))
+    row.check = CreateFrame("CheckButton", nil, row, "UICheckButtonTemplate")
+    row.check:SetWidth(24)
+    row.check:SetHeight(24)
+    row.check:SetPoint("LEFT", row, "LEFT", 0, 0)
+    row.label = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.label:SetPoint("LEFT", row.check, "RIGHT", 2, 0)
+    row.label:SetWidth(314)
+    row.label:SetJustifyH("LEFT")
+    row.label:SetText("")
+    row.check:SetScript("OnClick", function()
+      local parent = this:GetParent()
+      if parent and parent.charKey and parent.charKey ~= CCD.currentCharKey then
+        CCD.pendingCharacterFilters[parent.charKey] = this:GetChecked() and true or false
+      end
+    end)
+    row:Hide()
+    table.insert(CCD.configCharacterRows, row)
+  end
+
+  local charAllButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+  frame.charAllButton = charAllButton
+  charAllButton:SetWidth(72)
+  charAllButton:SetHeight(20)
+  charAllButton:SetText(T("options_all"))
+  charAllButton:SetScript("OnClick", function()
+    CCD.pendingCharacterFilters = CCD.pendingCharacterFilters or {}
+    for _, charKey in ipairs(getSortedCharacterKeys()) do
+      if charKey ~= CCD.currentCharKey then
+        CCD.pendingCharacterFilters[charKey] = true
+      end
+    end
+    updateConfigCharacterList()
+  end)
+
+  local charNoneButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+  frame.charNoneButton = charNoneButton
+  charNoneButton:SetWidth(72)
+  charNoneButton:SetHeight(20)
+  charNoneButton:SetText(T("options_none"))
+  charNoneButton:SetScript("OnClick", function()
+    CCD.pendingCharacterFilters = CCD.pendingCharacterFilters or {}
+    for _, charKey in ipairs(getSortedCharacterKeys()) do
+      if charKey ~= CCD.currentCharKey then
+        CCD.pendingCharacterFilters[charKey] = false
+      end
+    end
+    updateConfigCharacterList()
+  end)
+
   local listLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-  listLabel:SetPoint("TOPLEFT", frame.readySound, "BOTTOMLEFT", 4, -38)
+  frame.listLabel = listLabel
   listLabel:SetText(T("options_recipe_list"))
 
   local listBg = CreateFrame("Frame", nil, frame)
@@ -2246,40 +2986,35 @@ local function createConfigFrame()
     saveConfig()
   end)
 
-  local testButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-  frame.testButton = testButton
-  testButton:SetWidth(100)
-  testButton:SetHeight(22)
-  testButton:SetText(T("options_test"))
-  testButton:SetScript("OnClick", function()
-    if CCD.pendingOptions.readySound then
-      playReadySound()
-    end
-    if CCD.pendingOptions.readyMessage then
-      showCenterMessage(string.format(T("ready_again"), T("test_recipe_name")))
-    end
-  end)
-
-  local point = CCD.db.configFrame.point or "CENTER"
-  local relativePoint = CCD.db.configFrame.relativePoint or "CENTER"
-  local x = CCD.db.configFrame.x or 20
-  local y = CCD.db.configFrame.y or -20
+  local point = CCD.settings.configFrame.point or "CENTER"
+  local relativePoint = CCD.settings.configFrame.relativePoint or "CENTER"
+  local x = CCD.settings.configFrame.x or 20
+  local y = CCD.settings.configFrame.y or -20
   frame:SetPoint(point, UIParent, relativePoint, x, y)
   updateConfigFrameLayout()
 end
 
 openConfigFrame = function()
   createConfigFrame()
+  normalizeConfigFrameAnchor()
   CCD.pendingOptions = {
-    showMinimapButton = CCD.db.options.showMinimapButton and true or false,
-    lockFrame = CCD.db.options.lockFrame and true or false,
-    showProfessionHeaders = CCD.db.options.showProfessionHeaders and true or false,
-    readySound = CCD.db.options.readySound and true or false,
-    readyMessage = CCD.db.options.readyMessage and true or false,
+    showMinimapButton = CCD.settings.options.showMinimapButton and true or false,
+    lockFrame = CCD.settings.options.lockFrame and true or false,
+    showProfessionHeaders = CCD.settings.options.showProfessionHeaders and true or false,
+    readySound = CCD.settings.options.readySound and true or false,
+    readyMessage = CCD.settings.options.readyMessage and true or false,
+    showAllCharacters = CCD.settings.options.showAllCharacters and true or false,
+    tabSort = CCD.settings.tabSort or "name",
   }
   CCD.pendingRecipeFilters = {}
+  CCD.pendingCharacterFilters = {}
   for _, recipeDef in ipairs(getConfigurableRecipes()) do
     CCD.pendingRecipeFilters[recipeDef.id] = isRecipeEnabled(recipeDef.id) and true or false
+  end
+  for _, charKey in ipairs(getSortedCharacterKeys()) do
+    if charKey ~= CCD.currentCharKey then
+      CCD.pendingCharacterFilters[charKey] = isCharacterEnabled(charKey) and true or false
+    end
   end
   CCD.configFrame:Show()
   CCD.configFrame:Raise()
@@ -2291,6 +3026,7 @@ refreshFrame = function()
     return
   end
 
+  ensureCharacterTabs()
   local entries = buildEntries()
   ensureRows(table.getn(entries))
   updateFrameWidth(entries)
@@ -2306,7 +3042,7 @@ refreshFrame = function()
       row.left:SetTextColor(leftR, leftG, leftB)
       row.right:SetTextColor(rightR, rightG, rightB)
 
-      if entry.recipeId and entry.isReady then
+      if entry.recipeId and entry.isReady and getActiveCharacterKey() == CCD.currentCharKey then
         row.button.recipeId = entry.recipeId
         row.button:Show()
       else
@@ -2322,18 +3058,18 @@ refreshFrame = function()
     end
   end
 
-  local autoHeight = math.max(MAIN_FRAME_MIN_HEIGHT, 40 + (table.getn(entries) * 18) + 14)
+  local autoHeight = math.max(MAIN_FRAME_MIN_HEIGHT, (MAIN_FRAME_ROW_TOP + 12) + (table.getn(entries) * 18) + 14)
   local height = autoHeight
 
-  if CCD.db.frame.userSized and CCD.db.frame.height then
-    local storedHeight = math.max(MAIN_FRAME_MIN_HEIGHT, math.min(MAIN_FRAME_MAX_HEIGHT, CCD.db.frame.height))
+  if CCD.settings.frame.userSized and CCD.settings.frame.height then
+    local storedHeight = math.max(MAIN_FRAME_MIN_HEIGHT, math.min(MAIN_FRAME_MAX_HEIGHT, CCD.settings.frame.height))
     if storedHeight >= autoHeight then
       height = storedHeight
     else
-      CCD.db.frame.userSized = nil
-      CCD.db.frame.height = autoHeight
-      if not CCD.db.frame.width then
-        CCD.db.frame.width = CCD.frame:GetWidth()
+      CCD.settings.frame.userSized = nil
+      CCD.settings.frame.height = autoHeight
+      if not CCD.settings.frame.width then
+        CCD.settings.frame.width = CCD.frame:GetWidth()
       end
     end
   end
@@ -2343,12 +3079,12 @@ end
 
 local function saveFramePosition()
   local point, _, relativePoint, xOfs, yOfs = CCD.frame:GetPoint()
-  CCD.db.frame.point = point
-  CCD.db.frame.relativePoint = relativePoint
-  CCD.db.frame.x = xOfs
-  CCD.db.frame.y = yOfs
-  CCD.db.frame.width = CCD.frame:GetWidth()
-  CCD.db.frame.height = CCD.frame:GetHeight()
+  CCD.settings.frame.point = point
+  CCD.settings.frame.relativePoint = relativePoint
+  CCD.settings.frame.x = xOfs
+  CCD.settings.frame.y = yOfs
+  CCD.settings.frame.width = CCD.frame:GetWidth()
+  CCD.settings.frame.height = CCD.frame:GetHeight()
 end
 
 local function stopFrameResize()
@@ -2365,7 +3101,7 @@ local function stopFrameResize()
 end
 
 local function startFrameResize()
-  if not CCD.frame or CCD.db.options.lockFrame then
+  if not CCD.frame or CCD.settings.options.lockFrame then
     return
   end
 
@@ -2374,7 +3110,7 @@ local function startFrameResize()
   cursorX = (cursorX or 0) / scale
   cursorY = (cursorY or 0) / scale
 
-  CCD.db.frame.userSized = true
+  CCD.settings.frame.userSized = true
   CCD.isResizingFrame = {
     startCursorX = cursorX,
     startCursorY = cursorY,
@@ -2401,6 +3137,104 @@ local function startFrameResize()
   end)
 end
 
+ensureCharacterTabs = function()
+  if not CCD.frame then
+    return
+  end
+
+  CCD.tabs = CCD.tabs or {}
+  if not (CCD.settings and CCD.settings.options and CCD.settings.options.showAllCharacters) then
+    for _, tab in ipairs(CCD.tabs) do
+      tab.charKey = nil
+      tab:Hide()
+    end
+    CCD.selectedCharacterKey = CCD.currentCharKey
+    return
+  end
+
+  local keys = getDisplayCharacterKeys()
+  if table.getn(keys) <= 1 then
+    for _, tab in ipairs(CCD.tabs) do
+      tab.charKey = nil
+      tab:Hide()
+    end
+    CCD.selectedCharacterKey = CCD.currentCharKey
+    return
+  end
+
+  for index = 1, table.getn(keys) do
+    if not CCD.tabs[index] then
+      local tab = CreateFrame("Button", "CraftCooldownsCharacterTab" .. index, CCD.frame, "CharacterFrameTabButtonTemplate")
+      tab:SetID(index)
+      tab:SetScript("OnClick", function()
+        CCD.selectedCharacterKey = this.charKey
+        refreshFrame()
+      end)
+      tab:SetScript("OnEnter", function()
+        if not this.charKey then
+          return
+        end
+
+        local charDb = getCharacterRecord(this.charKey)
+        local _, realm = splitCharKey(this.charKey)
+        GameTooltip:SetOwner(this, "ANCHOR_TOP")
+        GameTooltip:AddLine(this.charKey)
+        if realm and realm ~= "" then
+          GameTooltip:AddLine(realm, 0.8, 0.8, 0.8)
+        end
+        if charDb then
+          local updated = formatTimestamp(getCharacterLastUpdated(charDb))
+          GameTooltip:AddLine(updated and string.format(T("last_updated"), updated) or T("last_updated_never"), 0.7, 0.7, 0.7)
+        end
+        GameTooltip:Show()
+      end)
+      tab:SetScript("OnLeave", function()
+        GameTooltip:Hide()
+      end)
+      CCD.tabs[index] = tab
+    end
+  end
+
+  local previousTab
+  for index, tab in ipairs(CCD.tabs) do
+    local charKey = keys[index]
+    if charKey then
+      local label = getCharacterDisplayName(charKey)
+      tab.charKey = charKey
+      tab:SetText(label)
+      if PanelTemplates_TabResize then
+        PanelTemplates_TabResize(0, tab)
+      else
+        tab:SetWidth(math.max(56, math.min(110, string.len(label) * 7 + 30)))
+      end
+      tab:ClearAllPoints()
+      if previousTab then
+        tab:SetPoint("LEFT", previousTab, "RIGHT", -18, 0)
+      else
+        tab:SetPoint("TOPLEFT", CCD.frame, "TOPLEFT", 10, -32)
+      end
+      if charKey == getActiveCharacterKey() then
+        if PanelTemplates_SelectTab then
+          PanelTemplates_SelectTab(tab)
+        else
+          tab:Disable()
+        end
+      else
+        if PanelTemplates_DeselectTab then
+          PanelTemplates_DeselectTab(tab)
+        else
+          tab:Enable()
+        end
+      end
+      tab:Show()
+      previousTab = tab
+    else
+      tab.charKey = nil
+      tab:Hide()
+    end
+  end
+end
+
 local function createFrame()
   if CCD.frame then
     return
@@ -2409,8 +3243,8 @@ local function createFrame()
   local frame = CreateFrame("Frame", "CraftCooldownsFrame", UIParent)
   CCD.frame = frame
 
-  frame:SetWidth(CCD.db.frame.width or MAIN_FRAME_MIN_WIDTH)
-  frame:SetHeight(CCD.db.frame.height or 140)
+  frame:SetWidth(CCD.settings.frame.width or MAIN_FRAME_MIN_WIDTH)
+  frame:SetHeight(CCD.settings.frame.height or 140)
   if frame.SetMinResize then
     frame:SetMinResize(MAIN_FRAME_MIN_WIDTH, MAIN_FRAME_MIN_HEIGHT)
   end
@@ -2428,7 +3262,7 @@ local function createFrame()
   frame:EnableMouse(true)
   frame:RegisterForDrag("LeftButton")
   frame:SetScript("OnDragStart", function()
-    if CCD.db.options.lockFrame then
+    if CCD.settings.options.lockFrame then
       return
     end
     this:StartMoving()
@@ -2462,7 +3296,7 @@ local function createFrame()
   closeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -4, -4)
   closeButton:SetScript("OnClick", function()
     frame:Hide()
-    CCD.db.visible = false
+    CCD.settings.visible = false
   end)
 
   local optionsButton = CreateFrame("Button", nil, frame)
@@ -2539,13 +3373,13 @@ local function createFrame()
     stopFrameResize()
   end)
 
-  local point = CCD.db.frame.point or "CENTER"
-  local relativePoint = CCD.db.frame.relativePoint or "CENTER"
-  local x = CCD.db.frame.x or 0
-  local y = CCD.db.frame.y or 0
+  local point = CCD.settings.frame.point or "CENTER"
+  local relativePoint = CCD.settings.frame.relativePoint or "CENTER"
+  local x = CCD.settings.frame.x or 0
+  local y = CCD.settings.frame.y or 0
   frame:SetPoint(point, UIParent, relativePoint, x, y)
 
-  if CCD.db.visible then
+  if CCD.settings.visible then
     frame:Show()
   else
     frame:Hide()
@@ -2561,10 +3395,10 @@ local function toggleFrame()
 
   if CCD.frame:IsShown() then
     CCD.frame:Hide()
-    CCD.db.visible = false
+    CCD.settings.visible = false
   else
     CCD.frame:Show()
-    CCD.db.visible = true
+    CCD.settings.visible = true
     refreshFrame()
   end
 end
@@ -2580,7 +3414,7 @@ local function updateMinimapButtonPosition()
     return
   end
 
-  local angle = CCD.db and CCD.db.minimap and CCD.db.minimap.angle or 45
+  local angle = CCD.settings and CCD.settings.minimap and CCD.settings.minimap.angle or 45
   local radius = 78
   local x = math.cos(math.rad(angle)) * radius
   local y = math.sin(math.rad(angle)) * radius
@@ -2594,7 +3428,7 @@ updateMinimapButtonVisibility = function()
     return
   end
 
-  if CCD.db.options.showMinimapButton then
+  if CCD.settings.options.showMinimapButton then
     CCD.minimapButton:Show()
     updateMinimapButtonPosition()
   else
@@ -2669,7 +3503,7 @@ local function createMinimapButton()
     my = my / scale
 
     local angle = math.deg(math.atan2(my - cy, mx - cx))
-    CCD.db.minimap.angle = angle
+    CCD.settings.minimap.angle = angle
     updateMinimapButtonPosition()
   end)
 
@@ -2748,6 +3582,14 @@ CCD:SetScript("OnEvent", function()
     updateMinimapButtonVisibility()
     refreshFrame()
   elseif event == "PLAYER_LOGIN" then
+    CCD.db.meta = CCD.db.meta or {}
+    CCD.db.meta.name = UnitName("player") or getCharacterDisplayName(CCD.currentCharKey)
+    CCD.db.meta.realm = GetRealmName and GetRealmName() or ""
+    CCD.db.meta.lastSeen = time()
+    if next(CCD.db.recipes or {}) then
+      CCD.db.lastUpdate = time()
+    end
+    CCD.selectedCharacterKey = CCD.selectedCharacterKey or CCD.currentCharKey
     updateProfessionList()
     updateMinimapButtonPosition()
     updateMinimapButtonVisibility()

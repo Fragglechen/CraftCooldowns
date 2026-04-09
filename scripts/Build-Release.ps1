@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 $releaseRoot = Join-Path $root "_release"
 $releaseDir = Join-Path $releaseRoot "CraftCooldowns"
-$zipPath = Join-Path $releaseRoot "CraftCooldowns-1.0.3.zip"
+$zipPath = Join-Path $releaseRoot "CraftCooldowns-1.0.4.zip"
 
 $tocPath = Join-Path $root "CraftCooldowns.toc"
 if (-not (Test-Path $tocPath)) {
